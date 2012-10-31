@@ -1,0 +1,204 @@
+@charset "IBM866";
+/*main*/
+/* line 6, ../scss/main - копия.scss */
+.main {
+  padding-bottom: 45px;
+  overflow: hidden;
+}
+
+/* line 10, ../scss/main - копия.scss */
+.main__about {
+  float: left;
+  width: 440px;
+  margin-right: 20px;
+}
+/* line 14, ../scss/main - копия.scss */
+.main__about img {
+  float: left;
+}
+/* line 17, ../scss/main - копия.scss */
+.main__about span {
+  display: block;
+  margin: -5px 0 15px 0;
+}
+/* line 21, ../scss/main - копия.scss */
+.main__about p {
+  margin-bottom: 5px;
+}
+/* line 24, ../scss/main - копия.scss */
+.main__about a {
+  color: #444;
+  text-decoration: underline;
+}
+
+/* line 29, ../scss/main - копия.scss */
+.filter {
+  float: left;
+  width: 300px;
+}
+
+/* line 33, ../scss/main - копия.scss */
+.top {
+  float: right;
+  width: 170px;
+}
+
+/* line 37, ../scss/main - копия.scss */
+.tabs__link {
+  position: relative;
+  overflow: hidden;
+  z-index: 10;
+}
+/* line 41, ../scss/main - копия.scss */
+.tabs__link li {
+  float: left;
+  padding: 0 6px;
+  line-height: 26px;
+  background: #fff;
+  font-size: 13px;
+  color: #000;
+  cursor: pointer;
+  text-decoration: underline;
+  text-align: center;
+}
+/* line 52, ../scss/main - копия.scss */
+.tabs__link .active {
+  padding: 0 8px;
+  border: 1px solid #9f9f9f;
+  border-width: 1px 1px 0 1px;
+  text-decoration: none;
+}
+
+/* line 59, ../scss/main - копия.scss */
+.tabs__content {
+  position: relative;
+  margin-top: -1px;
+  padding: 20px 14px 15px 15px;
+  border: 1px solid #9f9f9f;
+}
+/* line 64, ../scss/main - копия.scss */
+.tabs__content a {
+  overflow: hidden;
+  font-size: 13px;
+}
+/* line 67, ../scss/main - копия.scss */
+.tabs__content a span {
+  float: right;
+}
+/* line 71, ../scss/main - копия.scss */
+.tabs__content i {
+  position: absolute;
+  top: 90px;
+  z-index: 10;
+  cursor: pointer;
+}
+/* line 77, ../scss/main - копия.scss */
+.tabs__content .tabs__slider-prev {
+  left: 5px;
+  background: url('../img/icons-sc17d8106a2.png') 0 -118px no-repeat;
+  width: 8px;
+  height: 15px;
+}
+/* line 81, ../scss/main - копия.scss */
+.tabs__content .tabs__slider-next {
+  right: 5px;
+  background: url('../img/icons-sc17d8106a2.png') 0 -133px no-repeat;
+  width: 8px;
+  height: 15px;
+}
+
+/* line 86, ../scss/main - копия.scss */
+.tabs__slider {
+  position: relative;
+  width: 140px;
+  height: 100px;
+  margin-top: 10px;
+  overflow: hidden;
+}
+/* line 92, ../scss/main - копия.scss */
+.tabs__slider a {
+  float: left;
+}
+
+/* line 96, ../scss/main - копия.scss */
+.items {
+  position: absolute;
+  width: 2000em;
+}
+
+/* line 100, ../scss/main - копия.scss */
+.articles-out {
+  margin-right: -50px;
+  overflow: hidden;
+}
+
+/* line 104, ../scss/main - копия.scss */
+.article {
+  float: left;
+  width: 290px;
+  margin-right: 40px;
+}
+/* line 108, ../scss/main - копия.scss */
+.article img {
+  margin-bottom: 10px;
+}
+/* line 111, ../scss/main - копия.scss */
+.article a {
+  font-size: 17px;
+  text-decoration: underline;
+}
+/* line 115, ../scss/main - копия.scss */
+.article p {
+  margin-top: 10px;
+}
+
+/* line 119, ../scss/main - копия.scss */
+.article_s {
+  width: 170px;
+}
+
+/* line 122, ../scss/main - копия.scss */
+.friends {
+  overflow: hidden;
+  margin: 0 -50px 40px 0;
+}
+/* line 125, ../scss/main - копия.scss */
+.friends li {
+  position: relative;
+  float: left;
+  width: 80px;
+  height: 75px;
+  padding-left: 60px;
+  margin-right: 20px;
+  font-size: 12px;
+}
+/* line 133, ../scss/main - копия.scss */
+.friends li img {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+/* line 138, ../scss/main - копия.scss */
+.friends li a {
+  text-decoration: underline;
+}
+/* line 141, ../scss/main - копия.scss */
+.friends li span {
+  position: relative;
+  display: block;
+  margin-top: 8px;
+  padding-left: 15px;
+}
+/* line 147, ../scss/main - копия.scss */
+.friends li i {
+  position: absolute;
+  top: 2px;
+  left: 0;
+  width: 10px;
+  height: 10px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+}

@@ -1,0 +1,158 @@
+@import "compass/css3";
+@import "base";
+$icons-layout: smart;
+$icons: sprite-map("icons/*.png");
+/*main*/
+.main {
+	padding-bottom: 45px;
+	overflow: hidden;
+}
+.main__about {
+	float: left;
+	width: 440px;
+	margin-right: 20px;
+	img {
+		float: left;
+		margin-bottom: 10px;
+	}
+	span {
+		display: block;
+		margin: -5px 0 15px 0;
+	}
+	p {
+		margin-bottom: 5px;
+	}
+	a {
+		color: #444;
+		text-decoration: underline;
+	}
+}
+.top {
+	float: right;
+	width: 170px;
+}
+.tabs_mt {
+	margin-top: 30px;
+}
+.tabs__link {
+	position: relative;
+	overflow: hidden;
+	z-index: 10;
+	li {
+		float: left;
+		padding: 0 6px;
+		line-height: 26px;
+		background: #fff;
+		font-size: 13px;
+		color: #000;
+		cursor: pointer;
+		text-decoration: underline;
+		text-align: center;
+	}
+	.active {
+		padding: 0 8px;
+		border: 1px solid #9f9f9f;
+		border-width: 1px 1px 0 1px;
+		text-decoration: none;
+	}
+}
+.tabs__content {
+	display: none;
+	position: relative;
+	margin-top: -1px;
+	padding: 20px 14px 15px 15px;
+	border: 1px solid #9f9f9f;
+	a {
+		overflow: hidden;
+		font-size: 13px;
+		span {
+			float: right;
+		}
+	}
+	i {
+		position: absolute;
+		top: 90px;		
+		z-index: 10;
+		cursor: pointer;
+	}
+	.tabs__slider-prev {
+		left: 5px;
+		@include sized-sprite($icons, prev);
+	}
+	.tabs__slider-next {
+		right: 5px;
+		@include sized-sprite($icons, next);
+	}
+}
+.tabs__slider {
+	position: relative;
+	width: 140px;
+	height: 100px;
+	margin-top: 10px;
+	overflow: hidden;
+	a {
+		float: left;
+	}
+}
+.items {
+	position: absolute;
+	width: 2000em;
+}
+.articles-out {
+	margin-right: -50px;
+	overflow: hidden;	
+}
+.article {
+	float: left;
+	width: 290px;
+	margin-right: 40px;
+	img {
+		margin-bottom: 10px;
+	}
+	a {
+		font-size: 17px;
+		text-decoration: underline;
+	}
+	p {
+		margin-top: 10px;
+	}
+}
+.article_s {
+	width: 170px;
+}
+.friends {
+	overflow: hidden;
+	margin: 0 -50px 40px 0;
+	li {
+		position: relative;
+		float: left;
+		width: 80px;
+		height: 75px;
+		padding-left: 60px;
+		margin-right: 20px;
+		font-size: 12px;
+		img {
+			position: absolute;
+			top: 0;
+			left: 0;
+		}
+		a {
+			text-decoration: underline;
+		}
+		span {
+			position: relative;
+			display: block;
+			margin-top: 8px;
+			padding-left: 15px;
+		}
+		i {
+			position: absolute;
+			top: 2px;
+			left: 0;
+			width: 10px;
+			height: 10px;
+			@include border-radius(5px);
+		}
+	}
+}
+

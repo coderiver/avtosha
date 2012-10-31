@@ -1,0 +1,25 @@
+/* line 2, ../scss/layouts.scss */
+.cols {
+  overflow: hidden;
+}
+/* line 4, ../scss/layouts.scss */
+.cols .col-1 {
+  float: left;
+  width: 950px;
+}
+/* line 8, ../scss/layouts.scss */
+.cols .col-2 {
+  float: right;
+  width: 250px;
+}
+/* line 12, ../scss/layouts.scss */
+.cols .col-3 {
+  float: left;
+  width: 740px;
+  margin-right: 20px;
+}
+/* line 17, ../scss/layouts.scss */
+.cols .col-4 {
+  float: left;
+  width: 170px;
+}

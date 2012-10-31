@@ -1,0 +1,241 @@
+/*inner*/
+/* line 6, ../scss/inner.scss */
+.detail {
+  overflow: hidden;
+}
+
+/* line 9, ../scss/inner.scss */
+.gallery {
+  float: left;
+  width: 400px;
+}
+
+/* line 13, ../scss/inner.scss */
+.gallery__img-s {
+  position: relative;
+  height: 65px;
+  overflow: hidden;
+}
+/* line 17, ../scss/inner.scss */
+.gallery__img-s a {
+  float: left;
+  position: relative;
+  margin-right: 3px;
+}
+/* line 22, ../scss/inner.scss */
+.gallery__img-s a:hover i, .gallery__img-s a.active i {
+  border: 2px solid #000;
+}
+/* line 27, ../scss/inner.scss */
+.gallery__img-s i {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 86px;
+  height: 61px;
+}
+
+/* line 35, ../scss/inner.scss */
+.params {
+  float: right;
+  width: 300px;
+}
+
+/* line 39, ../scss/inner.scss */
+.params__car {
+  width: 300px;
+}
+/* line 41, ../scss/inner.scss */
+.params__car li {
+  display: inline-block;
+  width: 145px;
+  margin-bottom: 15px;
+  vertical-align: top;
+}
+/* line 46, ../scss/inner.scss */
+.params__car li b {
+  display: block;
+}
+
+/* line 51, ../scss/inner.scss */
+.params__title {
+  display: block;
+  margin: 30px 0 10px 0;
+}
+
+/* line 55, ../scss/inner.scss */
+.social-btn {
+  margin: 30px 0;
+}
+
+/* line 58, ../scss/inner.scss */
+.info {
+  margin-bottom: 25px;
+}
+/* line 60, ../scss/inner.scss */
+.info p {
+  margin-bottom: 5px;
+}
+
+/*comments*/
+/* line 66, ../scss/inner.scss */
+.comments form {
+  width: 460px;
+  padding: 10px;
+  margin-bottom: 35px;
+  background: #f2fbfe;
+  overflow: hidden;
+}
+/* line 72, ../scss/inner.scss */
+.comments form textarea {
+  width: 440px;
+  height: 90px;
+  margin-bottom: 7px;
+  padding: 5px 10px;
+  border: 1px solid #d2d8da;
+  font-family: Tahoma, Arial, sans-serif;
+}
+/* line 80, ../scss/inner.scss */
+.comments form input {
+  float: left;
+  height: 20px;
+  padding: 0 5px;
+  margin-right: 20px;
+  line-height: 1;
+  border-top: 1px solid #d2d8da;
+  border-left: 1px solid #d2d8da;
+  border-right: 1px solid #d2d8da;
+  border-bottom: 1px solid #9c9c9c;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+  background: #fff;
+  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjUwJSIgeTE9IjAlIiB4Mj0iNTAlIiB5Mj0iMTAwJSI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI2YyZjJmMiIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
+  background-size: 100%;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffffff), color-stop(100%, #f2f2f2));
+  background-image: -webkit-linear-gradient(#ffffff, #f2f2f2);
+  background-image: -moz-linear-gradient(#ffffff, #f2f2f2);
+  background-image: -o-linear-gradient(#ffffff, #f2f2f2);
+  background-image: linear-gradient(#ffffff, #f2f2f2);
+  cursor: pointer;
+}
+/* line 95, ../scss/inner.scss */
+.comments form a {
+  line-height: 22px;
+  text-decoration: underline;
+  font-size: 12px;
+}
+
+/* line 102, ../scss/inner.scss */
+.comment {
+  position: relative;
+  padding-left: 50px;
+  margin-bottom: 20px;
+}
+/* line 106, ../scss/inner.scss */
+.comment img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: 2px solid #e5e5e5;
+}
+/* line 112, ../scss/inner.scss */
+.comment a {
+  text-decoration: underline;
+}
+/* line 115, ../scss/inner.scss */
+.comment span {
+  margin: 0 15px;
+  color: #666666;
+}
+
+/*tops*/
+/* line 121, ../scss/inner.scss */
+.tops {
+  padding-top: 10px;
+}
+/* line 123, ../scss/inner.scss */
+.tops h3 {
+  position: relative;
+  margin: 10px 0 20px 0;
+}
+/* line 126, ../scss/inner.scss */
+.tops h3 a {
+  position: absolute;
+  top: 7px;
+  left: 195px;
+  font-size: 12px;
+  color: #444;
+  text-decoration: underline;
+}
+
+/*article content*/
+/* line 138, ../scss/inner.scss */
+.article-content p {
+  margin-bottom: 20px;
+}
+/* line 141, ../scss/inner.scss */
+.article-content table {
+  width: 100%;
+  margin: 20px 0;
+  border-spacing: 0;
+  border-collapse: collapse;
+  border-top: 1px solid #d3d3d3;
+  text-align: left;
+}
+/* line 149, ../scss/inner.scss */
+.article-content tr {
+  border-bottom: 1px solid #d3d3d3;
+}
+/* line 151, ../scss/inner.scss */
+.article-content tr:nth-child(even) {
+  background: #f8f8f8;
+}
+/* line 155, ../scss/inner.scss */
+.article-content td, .article-content th {
+  padding: 15px;
+}
+/* line 157, ../scss/inner.scss */
+.article-content td:first-child, .article-content th:first-child {
+  width: 380px;
+}
+/* line 161, ../scss/inner.scss */
+.article-content th {
+  font-style: italic;
+  color: #acacac;
+  font-weight: normal;
+}
+/* line 166, ../scss/inner.scss */
+.article-content blockquote {
+  margin: 20px 0;
+  padding-left: 20px;
+  border-left: 4px solid #d4d4d4;
+}
+/* line 170, ../scss/inner.scss */
+.article-content blockquote i, .article-content blockquote b {
+  display: block;
+  text-align: right;
+}
+/* line 174, ../scss/inner.scss */
+.article-content blockquote i {
+  margin-top: 15px;
+}
+
+/* line 179, ../scss/inner.scss */
+.article-content__pic {
+  float: left;
+  margin: 0 25px 10px 0;
+  border: 1px solid #c2c2c2;
+}
+/* line 183, ../scss/inner.scss */
+.article-content__pic img, .article-content__pic i {
+  display: block;
+}
+/* line 186, ../scss/inner.scss */
+.article-content__pic i {
+  padding-left: 10px;
+  line-height: 26px;
+  background: #e8e8e8;
+}

@@ -1,0 +1,21 @@
+@import "base";
+.cols {
+	overflow: hidden;
+	.col-1 {
+		float: left;
+		width: 950px;
+	}
+	.col-2 {
+		float: right;
+		width: 250px;
+	}
+	.col-3 {
+		float: left;
+		width: 740px;
+		margin-right: 20px;
+	}
+	.col-4 {
+		float: left;
+		width: 170px;
+	}
+}

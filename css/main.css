@@ -1,0 +1,204 @@
+/*main*/
+/* line 6, ../scss/main.scss */
+.main {
+  padding-bottom: 45px;
+  overflow: hidden;
+}
+
+/* line 10, ../scss/main.scss */
+.main__about {
+  float: left;
+  width: 440px;
+  margin-right: 20px;
+}
+/* line 14, ../scss/main.scss */
+.main__about img {
+  float: left;
+  margin-bottom: 10px;
+}
+/* line 18, ../scss/main.scss */
+.main__about span {
+  display: block;
+  margin: -5px 0 15px 0;
+}
+/* line 22, ../scss/main.scss */
+.main__about p {
+  margin-bottom: 5px;
+}
+/* line 25, ../scss/main.scss */
+.main__about a {
+  color: #444;
+  text-decoration: underline;
+}
+
+/* line 30, ../scss/main.scss */
+.top {
+  float: right;
+  width: 170px;
+}
+
+/* line 34, ../scss/main.scss */
+.tabs_mt {
+  margin-top: 30px;
+}
+
+/* line 37, ../scss/main.scss */
+.tabs__link {
+  position: relative;
+  overflow: hidden;
+  z-index: 10;
+}
+/* line 41, ../scss/main.scss */
+.tabs__link li {
+  float: left;
+  padding: 0 6px;
+  line-height: 26px;
+  background: #fff;
+  font-size: 13px;
+  color: #000;
+  cursor: pointer;
+  text-decoration: underline;
+  text-align: center;
+}
+/* line 52, ../scss/main.scss */
+.tabs__link .active {
+  padding: 0 8px;
+  border: 1px solid #9f9f9f;
+  border-width: 1px 1px 0 1px;
+  text-decoration: none;
+}
+
+/* line 59, ../scss/main.scss */
+.tabs__content {
+  display: none;
+  position: relative;
+  margin-top: -1px;
+  padding: 20px 14px 15px 15px;
+  border: 1px solid #9f9f9f;
+}
+/* line 65, ../scss/main.scss */
+.tabs__content a {
+  overflow: hidden;
+  font-size: 13px;
+}
+/* line 68, ../scss/main.scss */
+.tabs__content a span {
+  float: right;
+}
+/* line 72, ../scss/main.scss */
+.tabs__content i {
+  position: absolute;
+  top: 90px;
+  z-index: 10;
+  cursor: pointer;
+}
+/* line 78, ../scss/main.scss */
+.tabs__content .tabs__slider-prev {
+  left: 5px;
+  background: url('../img/icons-scb134e86ec.png') 0 -150px no-repeat;
+  width: 8px;
+  height: 15px;
+}
+/* line 82, ../scss/main.scss */
+.tabs__content .tabs__slider-next {
+  right: 5px;
+  background: url('../img/icons-scb134e86ec.png') 0 -165px no-repeat;
+  width: 8px;
+  height: 15px;
+}
+
+/* line 87, ../scss/main.scss */
+.tabs__slider {
+  position: relative;
+  width: 140px;
+  height: 100px;
+  margin-top: 10px;
+  overflow: hidden;
+}
+/* line 93, ../scss/main.scss */
+.tabs__slider a {
+  float: left;
+}
+
+/* line 97, ../scss/main.scss */
+.items {
+  position: absolute;
+  width: 2000em;
+}
+
+/* line 101, ../scss/main.scss */
+.articles-out {
+  margin-right: -50px;
+  overflow: hidden;
+}
+
+/* line 105, ../scss/main.scss */
+.article {
+  float: left;
+  width: 290px;
+  margin-right: 40px;
+}
+/* line 109, ../scss/main.scss */
+.article img {
+  margin-bottom: 10px;
+}
+/* line 112, ../scss/main.scss */
+.article a {
+  font-size: 17px;
+  text-decoration: underline;
+}
+/* line 116, ../scss/main.scss */
+.article p {
+  margin-top: 10px;
+}
+
+/* line 120, ../scss/main.scss */
+.article_s {
+  width: 170px;
+}
+
+/* line 123, ../scss/main.scss */
+.friends {
+  overflow: hidden;
+  margin: 0 -50px 40px 0;
+}
+/* line 126, ../scss/main.scss */
+.friends li {
+  position: relative;
+  float: left;
+  width: 80px;
+  height: 75px;
+  padding-left: 60px;
+  margin-right: 20px;
+  font-size: 12px;
+}
+/* line 134, ../scss/main.scss */
+.friends li img {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+/* line 139, ../scss/main.scss */
+.friends li a {
+  text-decoration: underline;
+}
+/* line 142, ../scss/main.scss */
+.friends li span {
+  position: relative;
+  display: block;
+  margin-top: 8px;
+  padding-left: 15px;
+}
+/* line 148, ../scss/main.scss */
+.friends li i {
+  position: absolute;
+  top: 2px;
+  left: 0;
+  width: 10px;
+  height: 10px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+}
