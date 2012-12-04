@@ -1,0 +1,502 @@
+@import "base";
+//resets
+*{margin:0;padding:0;}
+body, html {
+	height: 100%;
+}
+body {
+	font: {
+	    family: Arial,sans-serif;
+	    weight: normal;
+	    size: 14px;
+	  	}
+	line-height:1.2;
+	color: $dark;
+}
+a {
+	text-decoration: none;
+}
+a img,fieldset {
+	border:none;
+}
+a img, fieldset {
+	border: none;	
+}
+li, ol {
+	list-style: none;
+}
+input, textarea, button {
+	border: none;
+	outline: none;
+}
+.h2 {	
+	font: 24px/38px 'plumbbold', Arial, sans-serif;
+	color: #fff;
+}
+.h3 {
+	font-size: 18px;
+}
+//general styles
+.bg {
+	position: absolute;
+	top: 0;
+	left: 328px;
+	width: 1247px;
+	height: 2046px;
+	background: url(../img/bg.png) no-repeat 50% 0;
+}
+.bgbtn {
+	position: fixed;
+	top: 0;
+	right: 0;
+	width: 20px;
+	height: 20px;
+	background: red;
+}
+.wrap {
+	width: 1247px;
+	margin: 0 auto -241px;
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+}
+.push {
+	height: 241px;
+	clear: both;
+}
+.title {
+	display: inline-block;
+	padding: 0 10px;
+	background: $pink;
+	font: 24px/38px 'plumbbold', Arial, sans-serif;
+	color: #fff;
+}
+.link {
+	color: $blue;
+	text-decoration: underline;
+	&:hover {
+		color: $green;
+		text-decoration: none;
+	}
+	&:active {
+		color: $pink;
+	}
+}
+.clr{
+  clear: both;
+}
+//header
+.header {
+	position: relative;
+	height: 120px;
+	padding-left: 438px;
+	overflow: hidden;
+}
+.logo {
+	position: absolute;
+	top: 0;
+	left: 0;
+	@include sized-sprite($icons, logo);
+	a {
+		display: block;
+		width: 100%;
+		height: 100%;
+		@include hide-text;
+	}
+	i {
+		position: absolute;
+		top: 13px;
+	}
+}
+.logo__wing-l {
+	left: 0;
+	@include sized-sprite($icons, logo-l);
+}
+.logo__wing-r {
+	right: 1px;
+	@include sized-sprite($icons, logo-r);
+}
+//nav
+.nav {
+	position: absolute;
+	top: 0;
+	left: 438px;
+	padding: 7px 3px 9px 15px;
+	background: $blue;	
+	overflow: hidden;
+	li {
+		float: left;
+		margin-right: 16px;
+	}
+	a {
+		display: block;
+		padding: 0 10px;
+		font: 18px/26px 'plumbbold', Arial, sans-serif;
+		color: #fff;
+		border: 2px solid $blue;	
+		&:hover {
+			border: 2px solid $green;	
+		}
+		&:active {
+			border: 2px solid $pink;	
+			background: $pink;
+		}
+	}
+}
+.nav-sub {
+	position: absolute;
+	top: 63px;
+	left: 450px;
+	overflow: hidden;
+	li {
+		float: left;
+		margin-right: 20px;
+	}
+	a {
+		font: 16px 'plumbregular', Arial, sans-serif; 
+		@extend .link;
+	}
+}
+//enter
+.enter {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 143px;
+	height: 45px;
+	padding-left: 27px;
+	background: #5371b1; 	
+	a {
+		position: absolute;
+	}
+}
+.enter__us {
+	top: 13px;
+	left: 27px;
+	font: 16px 'plumbregular', Arial, sans-serif; 
+	color: #fff;
+	&:hover {
+		color: $green;
+	}
+}
+.enter__fb, .enter__vk {
+	top: 11px;
+	&:hover {
+		border: 1px solid #d9dee0;
+	}
+}
+.enter__fb {
+	top: 11px;
+	right: 51px;
+	@include sized-sprite($icons, fb);
+	border: 1px solid #1c5e97;
+}
+.enter__vk {
+	top: 11px;
+	right: 17px;
+	@include sized-sprite($icons, vk);
+	border: 1px solid #4e83a6;
+}
+//footer 
+.footer-wrap {
+	background: $blue;
+}
+.footer {
+	position: relative;
+	width: 1247px;
+	height: 217px;
+	padding-top: 24px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+.footer__left {
+	float: left;
+	width: 275px;
+	padding-left: 10px;
+}
+.footer__logo {
+	position: relative;
+	margin-bottom: 31px;
+	padding-top: 36px;
+	i {
+		position: absolute;
+		top: 7px;
+		left: 0;
+		@include sized-sprite($icons, logo-f);
+	}
+	span {
+		margin-left: 5px;
+		font-size: 12px;
+		color: #fff;
+	}
+}
+.footer__nav {
+	float: left;
+	padding-top: 8px;
+	color: #fff;
+	ul {
+		float: left;
+	}
+	li {
+		font-size: 18px;
+		margin-bottom: 3px;
+	}
+	a {
+		font-size: 12px;
+		text-decoration: underline;
+		color: #fff;
+		&:hover {
+			text-decoration: none;
+			color: $green;
+		}
+		&:active {
+			color: $pink;
+		}
+	}
+}
+.footer__nav-1 {width: 177px;}
+.footer__nav-2 {width: 240px;}
+.facebook {
+	float: right;
+}
+//saerch 
+.search {
+	overflow: hidden;
+	input {
+		height: 25px;
+	}
+}
+.search__txt {
+	float: left;
+	width: 132px;
+	padding: 0 9px;
+	margin-right: 7px;
+	font-size: 14px;
+	&::-webkit-input-placeholder {
+		color: $dark;
+	}
+	&:-moz-placeholder {
+		color: $dark;
+	}
+}
+.search__btn {
+	width: 66px;
+	background: $pink;
+	border: 2px solid $pink;
+	text-align: center;
+	font: 14px 'plumbregular', Arial, sans-serif;
+	color: #fff;
+	cursor: pointer;
+	&:hover {
+		background: $blue;
+		border-color: $gray;
+	}
+}
+//catalog
+.catalog {
+	.title {
+		margin-bottom: 35px;
+	}
+}
+.catalog__list {
+	padding-left: 10px;
+	margin-bottom: 25px;
+	overflow: hidden;
+	li {
+		float: left;
+		margin: 0 25px 15px 0;
+	}
+	a {
+		color: $blue;
+		font-size: 18px;
+		border-bottom: 1px dashed $blue;
+		&:hover {
+			color: $green;
+			border: none;
+		}
+		&:active {
+			color: $pink;
+		}
+	}
+}
+.catalog__cars {
+	display: none;
+	padding-left: 10px;
+	margin: 0 -50px 5px 0;
+	overflow: hidden;
+	li {
+		float: left;
+		width: 186px;
+		margin: 0 55px 45px 0;
+	}
+	img {
+		@include border-radius(93px);
+	}
+	span {
+		display: block;
+		margin-top: 20px;
+		a {
+			float: left;
+			@extend .link;
+		}
+	}
+	b {
+		float: right;
+	}
+}
+//top
+.top {
+	.title {
+		margin-bottom: 27px;
+	}
+}
+.top__list {
+	margin: 0 -20px 15px 0;
+	overflow: hidden;	
+	li {
+		float: left;	
+		margin-right: 13px;	
+	}
+	a {
+		display: block;
+		height: 21px;
+		line-height: 21px;
+		border: 2px solid #d8d8d8;
+		text-align: center;
+		color: $dark;
+		&:hover {
+			background: $green;
+			color: #fff;
+		}
+		&.active {
+			border: 2px solid $pink;
+			background: $pink;
+			color: #fff;
+		}
+	}	
+}
+.top__list-1 {
+	a {
+		width: 82px;
+	}	
+}
+.top__list-2 {
+	a {
+		width: 72px;
+	}	
+}
+.top__sliders {
+	position: relative;
+	width: 273px;
+	height: 220px;
+	margin-bottom: 15px;
+}
+.top__slider {
+	display: none;
+	position: absolute;
+	width: 273px;
+	height: 220px;	
+	overflow: hidden;
+	button {
+		position: absolute;
+		top: 95px;
+		z-index: 10;
+		cursor: pointer;
+	}
+}
+.top__slider-prev {
+	left: 10px;
+	@include sized-sprite($icons, slider-l);
+	&:hover {
+		@include sized-sprite($icons, slider-l-h);
+	}
+	&:active {
+		@include sized-sprite($icons, slider-l-a);
+	}
+}
+.top__slider-next {
+	right: 10px;
+	@include sized-sprite($icons, slider-r);
+	&:hover {
+		@include sized-sprite($icons, slider-r-h);
+	}
+	&:active {
+		@include sized-sprite($icons, slider-r-a);
+	}
+}
+.top__items {
+	position: absolute;
+	width: 2000em;
+	li {
+		float: left;
+		width: 273px;
+		height: 220px;
+		text-align: center;
+	}
+	img {
+		@include border-radius(89px);
+	}
+}
+.top__car {
+	margin-bottom: 11px;
+	padding: 0 5px;
+	overflow: hidden;
+	a {
+		float: left;
+		@extend .link;
+	}
+	b {
+		float: right;
+	}
+}
+//banner
+.banner {
+	margin-bottom: 54px;
+	img {
+		display: block;
+	}
+}
+//range
+.range-wrap {
+	float: left;
+	margin-right: 38px;
+}
+.range {
+	position: relative;
+	width: 148px;
+	height: 12px;
+	padding-bottom: 12px;
+	span {
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+}
+.range__empty {
+	@include sized-sprite($icons, range);
+}
+.range__full {	
+	@include sized-sprite($icons, range-a);
+	width: 0;
+	z-index: 10;
+}
+.range__out {
+	position: absolute;
+	top: 0;
+	left: -3px;
+	width: 148px;
+	height: 12px;
+}
+.ui-slider-handle {
+	position: absolute;
+	bottom: -12px;
+	left: -3px;
+	@include sized-sprite($icons, hand);
+	outline: none;
+	&:hover {
+		@include sized-sprite($icons, hand-h);
+	}
+	&:active {
+		@include sized-sprite($icons, hand-a);
+	}
+}

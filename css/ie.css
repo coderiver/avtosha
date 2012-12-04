@@ -1,10 +1,1 @@
-/* line 3, ../scss/ie.scss */
-.ltie8 .filter-cat input {
-  top: -2px;
-  left: -2px;
-}
-/* line 9, ../scss/ie.scss */
-.ltie8 .cars__items li, .ltie8 .params__car li {
-  display: inline;
-  zoom: 1;
-}
+.lteie8 .title { display: inline; zoom: 1; }

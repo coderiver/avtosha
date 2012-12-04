@@ -1,0 +1,215 @@
+@import "base";
+//main styles
+.main-top {
+	margin-bottom: 52px;
+	overflow: hidden;
+}
+//filter
+.about {
+	float: left;
+	width: 392px;
+	font-family: 'plumbregular', Arial, sans-serif;
+}
+.about__desc {
+	padding: 0 20px 0 10px;
+	span {
+		display: block;
+		padding: 20px 0 19px 0;
+		font: 18px 'plumbbold', Arial, sans-serif;
+	}	
+	p {
+		margin-bottom: 10px;
+		line-height: 1.5;
+	}
+	a {
+		@extend .link;
+	}
+}
+//filter
+.filter {
+	float: right;
+	width: 465px;
+	padding: 6px 0 17px 24px;
+	background: $blue;
+	.h2 {
+		margin-bottom: 4px;
+	}
+	b {
+		display: block;
+		margin-bottom: 11px;
+		color: #fff;
+	}
+}
+.filter__price {
+	margin-bottom: 17px;
+	ul {
+		overflow: hidden;
+	}	
+	li {
+		float: left;
+		margin-right: 8px;
+	}
+	label {
+		display: block;
+		padding: 0 8px;
+		line-height: 21px;
+		border: 2px solid #d8d8d8;
+		font-size: 12px;
+		color: #fff;
+		cursor: pointer;
+		&.active {
+			background: $pink;
+			border: 2px solid $pink;
+		}
+	}
+	input {
+		display: none;
+	}
+}
+.filter__comfort {
+	margin-bottom: 10px;	
+}
+.filter__cat {
+	margin-bottom: 11px;
+	ul {
+		overflow: hidden;		
+	}
+	li {
+		position: relative;
+		float: left;
+		width: 122px;
+		height: 16px;
+		margin-bottom: 14px;
+		padding-left: 28px;
+		line-height: 16px;
+		color: #fff;
+	}
+	i, input {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 16px;
+		height: 16px;		
+	}
+	input {
+		opacity: 0;
+		z-index: 10;
+	}
+	input[type="radio"] + i {
+		@include sized-sprite($icons, radio);
+	}
+	input[type="radio"]:checked + i {		
+		@include sized-sprite($icons, radio-c);
+	}
+}
+.filter__btn {
+	padding-right: 24px;
+	text-align: center;
+	input {
+		width: 153px;
+		height: 29px;
+		background: $green;
+		border: 2px solid $green;
+		font: 18px/1'plumbbold', Arial, sans-serif;
+		color: #fff;
+		cursor: pointer;
+		&:hover {
+			background: $blue;
+			border: 2px solid $gray;
+		}
+		&:active {
+			background: $pink;
+			border: 2px solid $pink;
+		}
+	}	
+}
+//main-news
+.main-news {
+	padding-left: 10px;
+	margin: 0 -30px 47px 0;
+	overflow: hidden;
+	li {
+		float: left;
+		width: 290px;
+		margin-right: 23px;
+	}
+	img {
+		display: block;
+		margin-bottom: 20px;
+	}
+	.h3 {
+		margin-bottom: 20px;
+		font-weight: normal;
+	}
+	a {
+		@extend .link;
+	}
+	p {
+		line-height: 1.5;
+	}
+}
+//girlfriends
+.girlfriends {
+	margin-bottom: 65px;
+	font-size: 12px;
+	.title {
+		margin-bottom: 32px;
+	}
+	ul {
+		padding-left: 10px;
+		overflow: hidden;
+	}
+	li {
+		position: relative;
+		float: left;
+		width: 140px;
+		padding-right: 43px;
+	}
+	img {
+		float: left;
+		margin-right: 7px;
+	}
+	a {		
+		@extend .link;
+	}
+}
+.girlfriends__car {
+	position: absolute;
+	top: 33px;
+	left: 83px;
+	width: 70px;
+	color: $dark;
+	i {
+		position: absolute;
+		top: 0;
+		left: -16px;
+		width: 12px;
+		height: 12px;
+	}
+}
+//gossip
+.gossip {
+	margin-bottom: 65px;
+	.title {
+		margin-bottom: 22px;
+	}
+	p {
+		line-height: 1.5;
+	}
+	li {
+		margin-bottom: 30px;
+	}
+}
+.gossip__person {
+	margin-bottom: 10px;
+	img {
+		float: left;
+		padding-top: 3px;
+		margin-right: 8px;
+	}
+	span {
+		display: block;
+		font-size: 12px;
+		color: #7f7f7f;
+	}	
+}

@@ -1,204 +1,63 @@
-/*main*/
-/* line 6, ../scss/main.scss */
-.main {
-  padding-bottom: 45px;
-  overflow: hidden;
-}
+@font-face { font-family: 'plumbbold'; src: url("../fonts/plumb-webfont.eot"); src: url("../fonts/plumb-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/plumb-webfont.woff") format("woff"), url("../fonts/plumb-webfont.ttf") format("truetype"), url("../fonts/plumb-webfont.svg#plumbbold") format("svg"); font-weight: normal; font-style: normal; }
 
-/* line 10, ../scss/main.scss */
-.main__about {
-  float: left;
-  width: 440px;
-  margin-right: 20px;
-}
-/* line 14, ../scss/main.scss */
-.main__about img {
-  float: left;
-  margin-bottom: 10px;
-}
-/* line 18, ../scss/main.scss */
-.main__about span {
-  display: block;
-  margin: -5px 0 15px 0;
-}
-/* line 22, ../scss/main.scss */
-.main__about p {
-  margin-bottom: 5px;
-}
-/* line 25, ../scss/main.scss */
-.main__about a {
-  color: #444;
-  text-decoration: underline;
-}
+@font-face { font-family: 'plumbcondensedregular'; src: url("../fonts/plumcrg_-webfont-webfont.eot"); src: url("../fonts/plumcrg_-webfont-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/plumcrg_-webfont-webfont.woff") format("woff"), url("../fonts/plumcrg_-webfont-webfont.ttf") format("truetype"), url("../fonts/plumcrg_-webfont-webfont.svg#plumbcondensedregular") format("svg"); font-weight: normal; font-style: normal; }
 
-/* line 30, ../scss/main.scss */
-.top {
-  float: right;
-  width: 170px;
-}
+@font-face { font-family: 'plumbregular'; src: url("../fonts/plumb-regular-webfont.eot"); src: url("../fonts/plumb-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/plumb-regular-webfont.woff") format("woff"), url("../fonts/plumb-regular-webfont.ttf") format("truetype"), url("../fonts/plumb-regular-webfont.svg#plumbregular") format("svg"); font-weight: normal; font-style: normal; }
 
-/* line 34, ../scss/main.scss */
-.tabs_mt {
-  margin-top: 30px;
-}
+.main-top { margin-bottom: 52px; overflow: hidden; }
 
-/* line 37, ../scss/main.scss */
-.tabs__link {
-  position: relative;
-  overflow: hidden;
-  z-index: 10;
-}
-/* line 41, ../scss/main.scss */
-.tabs__link li {
-  float: left;
-  padding: 0 6px;
-  line-height: 26px;
-  background: #fff;
-  font-size: 13px;
-  color: #000;
-  cursor: pointer;
-  text-decoration: underline;
-  text-align: center;
-}
-/* line 52, ../scss/main.scss */
-.tabs__link .active {
-  padding: 0 8px;
-  border: 1px solid #9f9f9f;
-  border-width: 1px 1px 0 1px;
-  text-decoration: none;
-}
+.about { float: left; width: 392px; font-family: 'plumbregular', Arial, sans-serif; }
 
-/* line 59, ../scss/main.scss */
-.tabs__content {
-  display: none;
-  position: relative;
-  margin-top: -1px;
-  padding: 20px 14px 15px 15px;
-  border: 1px solid #9f9f9f;
-}
-/* line 65, ../scss/main.scss */
-.tabs__content a {
-  overflow: hidden;
-  font-size: 13px;
-}
-/* line 68, ../scss/main.scss */
-.tabs__content a span {
-  float: right;
-}
-/* line 72, ../scss/main.scss */
-.tabs__content i {
-  position: absolute;
-  top: 90px;
-  z-index: 10;
-  cursor: pointer;
-}
-/* line 78, ../scss/main.scss */
-.tabs__content .tabs__slider-prev {
-  left: 5px;
-  background: url('../img/icons-scb134e86ec.png') 0 -150px no-repeat;
-  width: 8px;
-  height: 15px;
-}
-/* line 82, ../scss/main.scss */
-.tabs__content .tabs__slider-next {
-  right: 5px;
-  background: url('../img/icons-scb134e86ec.png') 0 -165px no-repeat;
-  width: 8px;
-  height: 15px;
-}
+.about__desc { padding: 0 20px 0 10px; }
+.about__desc span { display: block; padding: 20px 0 19px 0; font: 18px 'plumbbold', Arial, sans-serif; }
+.about__desc p { margin-bottom: 10px; line-height: 1.5; }
 
-/* line 87, ../scss/main.scss */
-.tabs__slider {
-  position: relative;
-  width: 140px;
-  height: 100px;
-  margin-top: 10px;
-  overflow: hidden;
-}
-/* line 93, ../scss/main.scss */
-.tabs__slider a {
-  float: left;
-}
+.filter { float: right; width: 465px; padding: 6px 0 17px 24px; background: #00b9e9; }
+.filter .h2 { margin-bottom: 4px; }
+.filter b { display: block; margin-bottom: 11px; color: #fff; }
 
-/* line 97, ../scss/main.scss */
-.items {
-  position: absolute;
-  width: 2000em;
-}
+.filter__price { margin-bottom: 17px; }
+.filter__price ul { overflow: hidden; }
+.filter__price li { float: left; margin-right: 8px; }
+.filter__price label { display: block; padding: 0 8px; line-height: 21px; border: 2px solid #d8d8d8; font-size: 12px; color: #fff; cursor: pointer; }
+.filter__price label.active { background: #ff358b; border: 2px solid #ff358b; }
+.filter__price input { display: none; }
 
-/* line 101, ../scss/main.scss */
-.articles-out {
-  margin-right: -50px;
-  overflow: hidden;
-}
+.filter__comfort { margin-bottom: 10px; }
 
-/* line 105, ../scss/main.scss */
-.article {
-  float: left;
-  width: 290px;
-  margin-right: 40px;
-}
-/* line 109, ../scss/main.scss */
-.article img {
-  margin-bottom: 10px;
-}
-/* line 112, ../scss/main.scss */
-.article a {
-  font-size: 17px;
-  text-decoration: underline;
-}
-/* line 116, ../scss/main.scss */
-.article p {
-  margin-top: 10px;
-}
+.filter__cat { margin-bottom: 11px; }
+.filter__cat ul { overflow: hidden; }
+.filter__cat li { position: relative; float: left; width: 122px; height: 16px; margin-bottom: 14px; padding-left: 28px; line-height: 16px; color: #fff; }
+.filter__cat i, .filter__cat input { position: absolute; top: 0; left: 0; width: 16px; height: 16px; }
+.filter__cat input { opacity: 0; z-index: 10; }
+.filter__cat input[type="radio"] + i { background: url('../img/icons-s1f2233a5cb.png') 0 -368px no-repeat; width: 16px; height: 16px; }
+.filter__cat input[type="radio"]:checked + i { background: url('../img/icons-s1f2233a5cb.png') 0 -306px no-repeat; width: 16px; height: 16px; }
 
-/* line 120, ../scss/main.scss */
-.article_s {
-  width: 170px;
-}
+.filter__btn { padding-right: 24px; text-align: center; }
+.filter__btn input { width: 153px; height: 29px; background: #addd2c; border: 2px solid #addd2c; font: 18px/1 "plumbbold", Arial, sans-serif; color: #fff; cursor: pointer; }
+.filter__btn input:hover { background: #00b9e9; border: 2px solid #d8d8d8; }
+.filter__btn input:active { background: #ff358b; border: 2px solid #ff358b; }
 
-/* line 123, ../scss/main.scss */
-.friends {
-  overflow: hidden;
-  margin: 0 -50px 40px 0;
-}
-/* line 126, ../scss/main.scss */
-.friends li {
-  position: relative;
-  float: left;
-  width: 80px;
-  height: 75px;
-  padding-left: 60px;
-  margin-right: 20px;
-  font-size: 12px;
-}
-/* line 134, ../scss/main.scss */
-.friends li img {
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-/* line 139, ../scss/main.scss */
-.friends li a {
-  text-decoration: underline;
-}
-/* line 142, ../scss/main.scss */
-.friends li span {
-  position: relative;
-  display: block;
-  margin-top: 8px;
-  padding-left: 15px;
-}
-/* line 148, ../scss/main.scss */
-.friends li i {
-  position: absolute;
-  top: 2px;
-  left: 0;
-  width: 10px;
-  height: 10px;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  -ms-border-radius: 5px;
-  -o-border-radius: 5px;
-  border-radius: 5px;
-}
+.main-news { padding-left: 10px; margin: 0 -30px 47px 0; overflow: hidden; }
+.main-news li { float: left; width: 290px; margin-right: 23px; }
+.main-news img { display: block; margin-bottom: 20px; }
+.main-news .h3 { margin-bottom: 20px; font-weight: normal; }
+.main-news p { line-height: 1.5; }
+
+.girlfriends { margin-bottom: 65px; font-size: 12px; }
+.girlfriends .title { margin-bottom: 32px; }
+.girlfriends ul { padding-left: 10px; overflow: hidden; }
+.girlfriends li { position: relative; float: left; width: 140px; padding-right: 43px; }
+.girlfriends img { float: left; margin-right: 7px; }
+
+.girlfriends__car { position: absolute; top: 33px; left: 83px; width: 70px; color: #323232; }
+.girlfriends__car i { position: absolute; top: 0; left: -16px; width: 12px; height: 12px; }
+
+.gossip { margin-bottom: 65px; }
+.gossip .title { margin-bottom: 22px; }
+.gossip p { line-height: 1.5; }
+.gossip li { margin-bottom: 30px; }
+
+.gossip__person { margin-bottom: 10px; }
+.gossip__person img { float: left; padding-top: 3px; margin-right: 8px; }
+.gossip__person span { display: block; font-size: 12px; color: #7f7f7f; }

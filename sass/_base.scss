@@ -1,0 +1,42 @@
+@import "lib/base";
+@import "lib/animations";
+@import "lib/keyframes";
+//variables
+$blue: #00b9e9;
+$green: #addd2c;
+$pink: #ff358b;
+$dark: #323232;
+$gray: #d8d8d8;
+// global sprites
+$icons: sprite-map("icons/*.png", $spacing: 10px);
+//fonts
+@font-face {
+    font-family: 'plumbbold';
+    src: url('../fonts/plumb-webfont.eot');
+    src: url('../fonts/plumb-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/plumb-webfont.woff') format('woff'),
+         url('../fonts/plumb-webfont.ttf') format('truetype'),
+         url('../fonts/plumb-webfont.svg#plumbbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'plumbcondensedregular';
+    src: url('../fonts/plumcrg_-webfont-webfont.eot');
+    src: url('../fonts/plumcrg_-webfont-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/plumcrg_-webfont-webfont.woff') format('woff'),
+         url('../fonts/plumcrg_-webfont-webfont.ttf') format('truetype'),
+         url('../fonts/plumcrg_-webfont-webfont.svg#plumbcondensedregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'plumbregular';
+    src: url('../fonts/plumb-regular-webfont.eot');
+    src: url('../fonts/plumb-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/plumb-regular-webfont.woff') format('woff'),
+         url('../fonts/plumb-regular-webfont.ttf') format('truetype'),
+         url('../fonts/plumb-regular-webfont.svg#plumbregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
