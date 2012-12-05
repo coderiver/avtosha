@@ -4,6 +4,76 @@
 
 @font-face { font-family: 'plumbregular'; src: url("../fonts/plumb-regular-webfont.eot"); src: url("../fonts/plumb-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/plumb-regular-webfont.woff") format("woff"), url("../fonts/plumb-regular-webfont.ttf") format("truetype"), url("../fonts/plumb-regular-webfont.svg#plumbregular") format("svg"); font-weight: normal; font-style: normal; }
 
+@-moz-keyframes rotate-l { 0% { -moz-transform: rotate(-15deg); transform: rotate(-15deg); }
+  20% { -moz-transform: rotate(0deg); transform: rotate(0deg); }
+  40% { -moz-transform: rotate(-15deg); transform: rotate(-15deg); }
+  60% { -moz-transform: rotate(0deg); transform: rotate(0deg); }
+  80% { -moz-transform: rotate(-15deg); transform: rotate(-15deg); }
+  100% { -moz-transform: rotate(0deg); transform: rotate(0deg); } }
+
+@-webkit-keyframes rotate-l { 0% { -webkit-transform: rotate(-15deg); transform: rotate(-15deg); }
+  20% { -webkit-transform: rotate(0deg); transform: rotate(0deg); }
+  40% { -webkit-transform: rotate(-15deg); transform: rotate(-15deg); }
+  60% { -webkit-transform: rotate(0deg); transform: rotate(0deg); }
+  80% { -webkit-transform: rotate(-15deg); transform: rotate(-15deg); }
+  100% { -webkit-transform: rotate(0deg); transform: rotate(0deg); } }
+
+@-o-keyframes rotate-l { 0% { -o-transform: rotate(-15deg); transform: rotate(-15deg); }
+  20% { -o-transform: rotate(0deg); transform: rotate(0deg); }
+  40% { -o-transform: rotate(-15deg); transform: rotate(-15deg); }
+  60% { -o-transform: rotate(0deg); transform: rotate(0deg); }
+  80% { -o-transform: rotate(-15deg); transform: rotate(-15deg); }
+  100% { -o-transform: rotate(0deg); transform: rotate(0deg); } }
+
+@-ms-keyframes rotate-l { 0% { -ms-transform: rotate(-15deg); transform: rotate(-15deg); }
+  20% { -ms-transform: rotate(0deg); transform: rotate(0deg); }
+  40% { -ms-transform: rotate(-15deg); transform: rotate(-15deg); }
+  60% { -ms-transform: rotate(0deg); transform: rotate(0deg); }
+  80% { -ms-transform: rotate(-15deg); transform: rotate(-15deg); }
+  100% { -ms-transform: rotate(0deg); transform: rotate(0deg); } }
+
+@keyframes rotate-l { 0% { -webkit-transform: rotate(-15deg); -moz-transform: rotate(-15deg); -ms-transform: rotate(-15deg); -o-transform: rotate(-15deg); transform: rotate(-15deg); }
+  20% { -webkit-transform: rotate(0deg); -moz-transform: rotate(0deg); -ms-transform: rotate(0deg); -o-transform: rotate(0deg); transform: rotate(0deg); }
+  40% { -webkit-transform: rotate(-15deg); -moz-transform: rotate(-15deg); -ms-transform: rotate(-15deg); -o-transform: rotate(-15deg); transform: rotate(-15deg); }
+  60% { -webkit-transform: rotate(0deg); -moz-transform: rotate(0deg); -ms-transform: rotate(0deg); -o-transform: rotate(0deg); transform: rotate(0deg); }
+  80% { -webkit-transform: rotate(-15deg); -moz-transform: rotate(-15deg); -ms-transform: rotate(-15deg); -o-transform: rotate(-15deg); transform: rotate(-15deg); }
+  100% { -webkit-transform: rotate(0deg); -moz-transform: rotate(0deg); -ms-transform: rotate(0deg); -o-transform: rotate(0deg); transform: rotate(0deg); } }
+
+@-moz-keyframes rotate-r { 0% { -moz-transform: rotate(15deg); transform: rotate(15deg); }
+  20% { -moz-transform: rotate(0deg); transform: rotate(0deg); }
+  40% { -moz-transform: rotate(15deg); transform: rotate(15deg); }
+  60% { -moz-transform: rotate(0deg); transform: rotate(0deg); }
+  80% { -moz-transform: rotate(15deg); transform: rotate(15deg); }
+  100% { -moz-transform: rotate(0deg); transform: rotate(0deg); } }
+
+@-webkit-keyframes rotate-r { 0% { -webkit-transform: rotate(15deg); transform: rotate(15deg); }
+  20% { -webkit-transform: rotate(0deg); transform: rotate(0deg); }
+  40% { -webkit-transform: rotate(15deg); transform: rotate(15deg); }
+  60% { -webkit-transform: rotate(0deg); transform: rotate(0deg); }
+  80% { -webkit-transform: rotate(15deg); transform: rotate(15deg); }
+  100% { -webkit-transform: rotate(0deg); transform: rotate(0deg); } }
+
+@-o-keyframes rotate-r { 0% { -o-transform: rotate(15deg); transform: rotate(15deg); }
+  20% { -o-transform: rotate(0deg); transform: rotate(0deg); }
+  40% { -o-transform: rotate(15deg); transform: rotate(15deg); }
+  60% { -o-transform: rotate(0deg); transform: rotate(0deg); }
+  80% { -o-transform: rotate(15deg); transform: rotate(15deg); }
+  100% { -o-transform: rotate(0deg); transform: rotate(0deg); } }
+
+@-ms-keyframes rotate-r { 0% { -ms-transform: rotate(15deg); transform: rotate(15deg); }
+  20% { -ms-transform: rotate(0deg); transform: rotate(0deg); }
+  40% { -ms-transform: rotate(15deg); transform: rotate(15deg); }
+  60% { -ms-transform: rotate(0deg); transform: rotate(0deg); }
+  80% { -ms-transform: rotate(15deg); transform: rotate(15deg); }
+  100% { -ms-transform: rotate(0deg); transform: rotate(0deg); } }
+
+@keyframes rotate-r { 0% { -webkit-transform: rotate(15deg); -moz-transform: rotate(15deg); -ms-transform: rotate(15deg); -o-transform: rotate(15deg); transform: rotate(15deg); }
+  20% { -webkit-transform: rotate(0deg); -moz-transform: rotate(0deg); -ms-transform: rotate(0deg); -o-transform: rotate(0deg); transform: rotate(0deg); }
+  40% { -webkit-transform: rotate(15deg); -moz-transform: rotate(15deg); -ms-transform: rotate(15deg); -o-transform: rotate(15deg); transform: rotate(15deg); }
+  60% { -webkit-transform: rotate(0deg); -moz-transform: rotate(0deg); -ms-transform: rotate(0deg); -o-transform: rotate(0deg); transform: rotate(0deg); }
+  80% { -webkit-transform: rotate(15deg); -moz-transform: rotate(15deg); -ms-transform: rotate(15deg); -o-transform: rotate(15deg); transform: rotate(15deg); }
+  100% { -webkit-transform: rotate(0deg); -moz-transform: rotate(0deg); -ms-transform: rotate(0deg); -o-transform: rotate(0deg); transform: rotate(0deg); } }
+
 .main-top { margin-bottom: 52px; overflow: hidden; }
 
 .about { float: left; width: 392px; font-family: 'plumbregular', Arial, sans-serif; }
@@ -11,32 +81,6 @@
 .about__desc { padding: 0 20px 0 10px; }
 .about__desc span { display: block; padding: 20px 0 19px 0; font: 18px 'plumbbold', Arial, sans-serif; }
 .about__desc p { margin-bottom: 10px; line-height: 1.5; }
-
-.filter { float: right; width: 465px; padding: 6px 0 17px 24px; background: #00b9e9; }
-.filter .h2 { margin-bottom: 4px; }
-.filter b { display: block; margin-bottom: 11px; color: #fff; }
-
-.filter__price { margin-bottom: 17px; }
-.filter__price ul { overflow: hidden; }
-.filter__price li { float: left; margin-right: 8px; }
-.filter__price label { display: block; padding: 0 8px; line-height: 21px; border: 2px solid #d8d8d8; font-size: 12px; color: #fff; cursor: pointer; }
-.filter__price label.active { background: #ff358b; border: 2px solid #ff358b; }
-.filter__price input { display: none; }
-
-.filter__comfort { margin-bottom: 10px; }
-
-.filter__cat { margin-bottom: 11px; }
-.filter__cat ul { overflow: hidden; }
-.filter__cat li { position: relative; float: left; width: 122px; height: 16px; margin-bottom: 14px; padding-left: 28px; line-height: 16px; color: #fff; }
-.filter__cat i, .filter__cat input { position: absolute; top: 0; left: 0; width: 16px; height: 16px; }
-.filter__cat input { opacity: 0; z-index: 10; }
-.filter__cat input[type="radio"] + i { background: url('../img/icons-s1f2233a5cb.png') 0 -368px no-repeat; width: 16px; height: 16px; }
-.filter__cat input[type="radio"]:checked + i { background: url('../img/icons-s1f2233a5cb.png') 0 -306px no-repeat; width: 16px; height: 16px; }
-
-.filter__btn { padding-right: 24px; text-align: center; }
-.filter__btn input { width: 153px; height: 29px; background: #addd2c; border: 2px solid #addd2c; font: 18px/1 "plumbbold", Arial, sans-serif; color: #fff; cursor: pointer; }
-.filter__btn input:hover { background: #00b9e9; border: 2px solid #d8d8d8; }
-.filter__btn input:active { background: #ff358b; border: 2px solid #ff358b; }
 
 .main-news { padding-left: 10px; margin: 0 -30px 47px 0; overflow: hidden; }
 .main-news li { float: left; width: 290px; margin-right: 23px; }
@@ -61,3 +105,10 @@
 .gossip__person { margin-bottom: 10px; }
 .gossip__person img { float: left; padding-top: 3px; margin-right: 8px; }
 .gossip__person span { display: block; font-size: 12px; color: #7f7f7f; }
+
+.catalog_main { margin-bottom: 0px; }
+.catalog_main .title { margin-bottom: 35px; }
+.catalog_main .catalog__list { margin-bottom: 25px; }
+.catalog_main .catalog__cars { padding-left: 10px; }
+.catalog_main .catalog__cars li { width: 186px; height: 268px; margin: 0 55px 0 0; }
+.catalog_main .catalog__pic { width: 186px; height: 186px; }

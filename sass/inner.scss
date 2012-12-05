@@ -1,0 +1,680 @@
+@import "base";
+//inner pages styles
+//pagintaion
+.pagination {
+	margin-bottom: 65px;
+	text-align: center;
+	font-size: 0;
+	a {
+		display: inline-block;
+		width: 22px;
+		height: 22px;
+		margin: 0 7px;
+		line-height: 22px;
+		border: 1px solid #a1a1a1;
+		text-align: center;
+		font-size: 12px;
+		color: $blue;
+		&:hover {
+			background: $green;
+			border-color: $green;
+			color: #fff;
+		}
+		&:active {
+			background: $pink;
+			border-color: $pink;
+		}
+	}
+	.pagination__prev, .pagination__next {
+		width: auto;
+		padding: 0 10px;
+	}
+	.pagination__prev {
+		margin: 0 16px 0 7px;
+	}
+	.pagination__next {
+		margin: 0 7px 0 16px;
+	}
+}
+//catalog
+.catalog {
+	margin-bottom: 24px;
+	.title {
+		margin-bottom: 18px;
+	}
+	.breadcrumps {
+		margin-bottom: 27px;
+	}
+}
+.catalog__list {
+	padding-left: 10px;
+	margin-bottom: 11px;
+	overflow: hidden;
+	li {
+		float: left;
+		margin: 0 25px 15px 0;
+	}
+	a {
+		color: $blue;
+		font-size: 18px;
+		border-bottom: 1px dashed $blue;
+		&:hover {
+			color: $green;
+			border: none;
+		}
+		&:active {
+			color: $pink;
+		}
+	}
+}
+.catalog__cars {
+	display: none;	
+	margin: 0 -50px 5px 0;	
+	font-size: 0;
+	li {
+		display: inline-block;
+		width: 154px;
+		height: 233px;
+		margin: 0 41px 0 0;
+		vertical-align: top;
+		font-size: 14px;
+	}
+}
+.catalog__name {
+	margin-top: 16px;
+	a {
+		display: block;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		@extend .link;
+	}
+	b {
+		float: right;
+	}
+}
+.catalog__pic {
+	position: relative;
+	display: block;
+	width: 154px;
+	height: 154px;
+	img {
+		@include border-radius(50%);
+	}
+	span, b {
+		position: absolute;
+		right: 0;
+		height: 30px;
+		font: normal 14px/30px 'plumbregular', Arial, sans-serif;
+		color: #fff;
+	}
+	span {	
+		bottom: 10px;		
+		padding: 0 32px 0 12px;
+		background: $green;	
+		z-index: 10;	
+	}
+	b {
+		top: 0;
+		width: 22px;
+		background: $pink;
+		text-align: center;
+	}
+	&:after {
+		content: "";
+		display: none;
+		position: absolute;
+		top: -5px;
+		left: -5px;
+		width: 100%;
+		height: 100%;
+		border: 5px solid $green;
+		@include border-radius(50%);
+	}
+	&:hover {
+		&:after {
+			display: block;
+		}
+	}
+}
+//top
+.top {
+	.title {
+		margin-bottom: 27px;
+	}
+}
+.top__list {
+	margin: 0 -20px 15px 0;
+	overflow: hidden;	
+	li {
+		float: left;	
+		margin-right: 13px;	
+	}
+	a {
+		display: block;
+		height: 21px;
+		line-height: 21px;
+		border: 2px solid #d8d8d8;
+		text-align: center;
+		color: $dark;
+		&:hover {
+			background: $green;
+			color: #fff;
+		}
+		&.active {
+			border: 2px solid $pink;
+			background: $pink;
+			color: #fff;
+		}
+	}	
+}
+.top__list-1 {
+	a {
+		width: 82px;
+	}	
+}
+.top__list-2 {
+	a {
+		width: 72px;
+	}	
+}
+.top__sliders {
+	position: relative;
+	width: 273px;
+	height: 220px;
+	margin-bottom: 15px;
+}
+.top__slider {
+	display: none;
+	position: absolute;
+	width: 273px;
+	height: 220px;	
+	background: #fff;
+	overflow: hidden;
+	button {
+		position: absolute;
+		top: 95px;
+		z-index: 10;
+		cursor: pointer;
+	}
+}
+.top__slider-prev {
+	left: 10px;
+	@include sized-sprite($icons, slider-l);
+	&:hover {
+		@include sized-sprite($icons, slider-l-h);
+	}
+	&:active {
+		@include sized-sprite($icons, slider-l-a);
+	}
+}
+.top__slider-next {
+	right: 10px;
+	@include sized-sprite($icons, slider-r);
+	&:hover {
+		@include sized-sprite($icons, slider-r-h);
+	}
+	&:active {
+		@include sized-sprite($icons, slider-r-a);
+	}
+}
+.top__items {
+	position: absolute;
+	width: 2000em;
+	li {
+		float: left;
+		width: 273px;
+		height: 220px;
+		text-align: center;
+	}
+	img {
+		@include border-radius(50%);
+	}
+}
+.top__car {
+	margin-bottom: 11px;
+	padding: 0 5px;
+	overflow: hidden;
+	a {
+		float: left;
+		@extend .link;
+	}
+	b {
+		float: right;
+	}
+}
+.top_mod {
+	.title {
+		display: block;
+		margin-bottom: 19px;
+	}
+	.top__list {
+		font-size: 12px;
+		li {
+			margin-right: 6px;
+		}
+	}
+	.top__list-1 {
+		a {
+			width: 55px;
+		}		
+	}
+	.top__list-2 {
+		a {
+			width: 41px;
+		}		
+	}
+	.top__sliders, .top__slider, .top__items li {
+		width: 176px;
+		height: 150px;
+	}
+	button {
+		top: 78px;
+	}
+	.top__slider-prev {
+		left: 8px;
+		@include sized-sprite($icons, slider-l-s);
+		&:hover {
+			@include sized-sprite($icons, slider-l-h-s);
+		}
+		&:active {
+			@include sized-sprite($icons, slider-l-a-s);
+		}
+	}
+	.top__slider-next {
+		right: 8px;
+		@include sized-sprite($icons, slider-r-s);
+		&:hover {
+			@include sized-sprite($icons, slider-r-h-s);
+		}
+		&:active {
+			@include sized-sprite($icons, slider-r-a-s);
+		}
+	}
+}
+//range
+.range-wrap {
+	float: left;
+	margin-right: 38px;
+}
+.range {
+	position: relative;
+	width: 148px;
+	height: 12px;
+	padding-bottom: 12px;
+	span {
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+}
+.range__empty {
+	@include sized-sprite($icons, range);
+}
+.range__full {	
+	@include sized-sprite($icons, range-a);
+	width: 0;
+	z-index: 10;
+}
+.range__out {
+	position: absolute;
+	top: 0;
+	left: -3px;
+	width: 148px;
+	height: 12px;
+}
+.ui-slider-handle {
+	position: absolute;
+	bottom: -12px;
+	left: -3px;
+	@include sized-sprite($icons, hand);
+	outline: none;
+	&:hover {
+		@include sized-sprite($icons, hand-h);
+	}
+	&:active {
+		@include sized-sprite($icons, hand-a);
+	}
+}
+//aside-news
+.aside-news {
+	margin-bottom: 65px;
+	img {
+		display: block;
+		margin-bottom: 18px;
+	}
+	a {
+		@extend .link;
+		line-height: 1.5;
+	}
+	p {
+		margin-top: 4px;
+		line-height: 1.5;
+		font-size: 12px;
+	}
+}
+//filter
+.filter {
+	float: right;
+	width: 465px;
+	padding: 6px 0 17px 24px;
+	background: $blue;
+	.h2 {
+		margin: 5px 0 10px 0;
+	}
+	b {
+		display: block;
+		margin-bottom: 11px;
+		color: #fff;
+	}
+}
+.filter__price {
+	margin-bottom: 17px;
+	ul {
+		overflow: hidden;
+	}	
+	li {
+		float: left;
+		margin-right: 8px;
+	}
+	label {
+		display: block;
+		padding: 0 8px;
+		line-height: 21px;
+		border: 2px solid #d8d8d8;
+		font-size: 12px;
+		color: #fff;
+		cursor: pointer;
+		&:hover {
+			background: $green;
+		}
+		&.active {
+			background: $pink;
+			border: 2px solid $pink;
+		}
+	}
+	input {
+		display: none;
+	}
+}
+.filter__comfort {
+	margin-bottom: 10px;	
+}
+.filter__cat {
+	margin: 0 -50px 18px -8px;
+	overflow: hidden;
+	ul {
+		float: left;		
+	}
+	b {
+		margin: 0 0 7px 8px;		
+	}
+	label {
+		position: relative;
+		display: block;
+		height: 26px;
+		padding-left: 34px;
+		border: 2px solid $blue;
+		line-height: 26px;
+		color: #fff;
+		cursor: pointer;
+		&:hover {
+			border-color: $green;
+		}
+	}
+	i, input {
+		position: absolute;
+		top: 4px;
+		left: 6px;
+		width: 16px;
+		height: 16px;		
+	}
+	input {
+		opacity: 0;
+		z-index: 10;
+	}
+	input[type="radio"] + i {
+		@include sized-sprite($icons, radio);
+	}
+	input[type="radio"]:checked + i {		
+		@include sized-sprite($icons, radio-c);
+	}
+	input[type="checkbox"] + i {
+		@include sized-sprite($icons, checkbox);
+	}
+	input[type="checkbox"]:checked + i {		
+		@include sized-sprite($icons, checkbox-c);
+	}
+}
+.filter__cat-1 {
+	width: 140px;
+	margin-right: 30px;
+}
+.filter__cat-2 {
+	width: 110px;
+	margin-right: 15px;
+}
+.filter__cat-3 {
+	width: 159px;
+}
+.filter__btn {
+	padding-right: 24px;
+	text-align: center;
+	input {
+		width: 153px;
+		height: 29px;
+		background: $green;
+		border: 2px solid $green;
+		font: 18px/1'plumbbold', Arial, sans-serif;
+		color: #fff;
+		cursor: pointer;
+		&:hover {
+			background: $blue;
+			border: 2px solid $gray;
+		}
+		&:active {
+			background: $pink;
+			border: 2px solid $pink;
+		}
+	}	
+}
+.filter_mod {
+	float: none;
+	width: auto;
+	padding: 20px 0 16px 20px;
+	margin-bottom: 45px;
+	overflow: hidden;
+	.filter__price {
+		margin-bottom: 9px;
+		li {
+			margin: 0 8px 9px 0;
+		}
+	}	
+	.filter__cat-1 {
+		width: 137px;
+		margin-right: 0;
+	}
+	.filter__cat-2 {
+		margin-right: 4px;
+	}
+	.filter__cat-3 {
+		width: 150px;
+	}
+	.filter__btn {
+		text-align: right;
+	}
+}
+.filter__l {
+	float: left;
+	width: 310px;
+}
+.filter__r {
+	float: left;
+	width: 410px;
+}
+.filter_aside {
+	float: none;
+	width: auto;
+	padding: 10px 0 14px 14px;
+	margin: 20px 0 45px 0;
+	.filter__price {
+		margin-bottom: 8px;
+		ul {
+			margin: 0 -10px 0 -6px;
+		}
+		li {
+			margin: 0 9px 6px 0;
+		}
+	}
+	.filter__btn {
+		input {
+			width: 149px;
+		}		
+	}	
+}
+.filter_mod, .filter_aside {
+	.range-wrap {
+		margin-right: 17px;
+	}
+	.range, .range__out {
+		width: 128px;
+	}
+	.range__full {
+		@include sized-sprite($icons, range-s-a);
+		width: 0;
+	}
+	.range__empty {
+		@include sized-sprite($icons, range-s);
+	}
+}
+//content {
+.content {
+	padding: 15px 0 0 10px;
+	h1 {
+		font: 24px 'plumbbold', Arial, sans-serif;
+		color: $dark;
+	}
+	span {
+		display: block;
+		margin: 8px 0 22px 0;
+		color: $green;
+	}
+	img {
+		float: left;
+		margin: 0 16px 6px 0;
+	}
+	p {
+		margin-bottom: 15px;
+		line-height: 1.6;
+	}
+	table {
+		width: 100%;
+		margin: 23px 0 50px 0;
+	}
+	th {
+		font-weight: normal;
+		background: $green;
+		text-align: left;
+		color: #fff;
+	}
+	th, td {
+		height: 47px;
+		padding: 0 14px;
+		&:first-child {
+			width: 345px;
+		}
+	}
+	tr {
+		&:nth-child(2n+1) {
+			background: #e1f9ff;
+		}
+	}
+	blockquote {
+		margin-bottom: 42px;
+		padding: 0 0 6px 38px;
+		border-left: 11px solid #e1f9ff;
+		i, b {
+			display: block;
+			text-align: right;
+		}
+		i {
+			margin-bottom: 6px;
+		}
+		p {
+			margin-bottom: 25px;
+		}
+	}
+}
+//slider
+.slider-wrap {
+	position: relative;
+	margin-bottom: 20px;
+	padding: 44px 10px 0 10px;
+	background: #e1f9ff;
+}
+.slider-navi {
+	position: absolute;
+	top: 13px;
+	width: 100%;
+	font-size: 0;
+	text-align: center;
+	a {
+		display: inline-block;
+		width: 14px;
+		height: 14px;
+		margin-right: 5px;
+		background: #fff;
+		border: 1px solid #ddd;
+		@include border-radius(50%);
+		&.active {
+			background: $pink;
+			border-color: $pink;
+		}
+	}
+}
+.slider-nav {
+	position: absolute;
+	top: 11px;
+	right: 21px;
+	width: 40px;
+	height: 17px;
+}
+.slider-prev {
+	float: left;
+	@include sized-sprite($icons, slider-l-s);
+	&:hover {
+		@include sized-sprite($icons, slider-l-h-s);
+	}
+	&:active {
+		@include sized-sprite($icons, slider-l-a-s);
+	}
+}
+.slider-next {
+	float: right;
+	@include sized-sprite($icons, slider-r-s);
+	&:hover {
+		@include sized-sprite($icons, slider-r-h-s);
+	}
+	&:active {
+		@include sized-sprite($icons, slider-r-a-s);
+	}
+}
+.slider-title {
+	display: block;
+	padding: 13px 0 21px 0;
+	font-style: italic;
+	text-align: center;
+}
+.slider {
+	position: relative;
+	width: 710px;
+	height: 460px;
+	overflow: hidden;
+}
+.slider__items {
+	position: absolute;
+	width: 2000em;
+	img {
+		float: left;
+		margin: 0;
+	}
+}

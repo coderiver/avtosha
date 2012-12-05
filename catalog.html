@@ -35,112 +35,18 @@
 		</a>
 	</div>
 	<!-- END .header -->
-	<!-- BEGIN .main -->
+	<!-- BEGIN .layout -->
 	<div class="l">
-		<div class="l-col1">
-			<!-- BEGIN .main-top -->
-			<div class="main-top">
-				<!-- BEGIN .about -->
-				<div class="about">
-					<h2 class="title">Что такое Автоша?</h2>
-					<div class="about__desc">
-						<span>Привет, подружка!</span>
-						<p>Ты, наверное, давно хотела себе милую, но мощную, удобную, но красивую, блестящую, но дешевую машинку? <b>Тогда наш сайт — специально для тебя!</b> Автоша поможет тебе найти машинку твоей мечты.</p>
-						<p>Ты также будешь в курсе самых последних новостей из мира машинок, а <a href="#">подружки</a> не заставят тебя заскучать на дорогах Автоши! Еще тебя ждут разные вкусняшки, ведь это так классно!</p>
-						<p>Присоединяйся!</p> 
-					</div>				
-				</div>
-				<!-- END .about -->
-				<!-- BEGIN .filter -->
-				<form action="" class="filter">
-					<h2 class="h2">Подбери машинку</h2>
-					<!-- BEGIN .filter__price -->
-					<div class="filter__price">
-						<b>Цена</b>
-						<ul>
-							<li><label for="fp1">Любая<input id="fp1" type="radio" name="price"></label></li>
-							<li><label for="fp2">400 - 500 т.р.<input id="fp2" type="radio" name="price"></label></li>
-							<li><label for="fp3">500 - 600 т.р.<input id="fp3" type="radio" name="price"></label></li>
-							<li><label for="fp4">600 - 900 т.р.<input id="fp4" type="radio" name="price"></label></li>
-							<li><label for="fp5">от 900 т.р.<input id="fp5" type="radio" name="price"></label></li>
-						</ul>
-					</div>
-					<!-- END .filter__price -->
-					<!-- BEGIN .filter__comfort -->					
-					<div class="filter__comfort">
-						<div class="range-wrap">
-							<b>Крутость</b>							
-							<div class="range">
-								<div class="range__out">
-									<div class="range__slider"></div>
-								</div>
-								<input type="hidden">
-								<span class="range__full"></span>								
-								<span class="range__empty"></span>	
-							</div>
-						</div>
-						<div class="range-wrap">
-							<b>Комфорт</b>							
-							<div class="range">
-								<div class="range__out">
-									<div class="range__slider"></div>
-								</div>
-								<input type="hidden">
-								<span class="range__full"></span>
-								<span class="range__empty"></span>
-							</div>
-						</div>
-						<div class="clr"></div>
-					</div>
-					<!-- END .filter__comfort -->
-					<!-- BEGIN .filter__cat -->					
-					<div class="filter__cat">
-						<b>Категории</b>
-						<ul class="filter__cat-1">
-							<li><label for="fc1"><input id="fc1" type="radio" name="category"><i></i>Для города</label></li>
-							<li><label for="fc2"><input id="fc2" type="radio" name="category"><i></i>Для шоппинга</label></li>
-						</ul>
-						<ul class="filter__cat-2">
-							<li><label for="fc3"><input id="fc3" type="radio" name="category"><i></i>Для дачи</label></li>
-							<li><label for="fc4"><input id="fc4" type="radio" name="category"><i></i>Для детей</label></li>
-						</ul>
-						<ul class="filter__cat-3">
-							<li><label for="fc5"><input id="fc5" type="radio" name="category"><i></i>Для дочки</label></li>
-							<li><label for="fc6"><input id="fc6" type="radio" name="category"><i></i>Для всей семьи</label></li>
-						</ul>
-					</div>
-					<!-- END .filter__cat -->
-					<!-- BEGIN .filter__btn -->					
-					<div class="filter__btn">
-						<input type="submit" value="Поехали!">
-					</div>
-					<!-- END .filter__btn -->
-				</form>
-				<!-- END .filter -->
-			</div>
-			<!-- END .main-top -->
-			<!-- BEGIN .main-news -->
-			<ul class="main-news">
-				<li>
-					<a href="#"><img src="img/pic1.jpg" alt=""></a>
-					<h3 class="h3"><a href="#">Subaru BRZ обзаведется турбомотором</a></h3>
-					<p>Компания Subaru планирует выпустить турбированную версию своего спорт-купе BRZ, сообщает «5 колесо». Многие поклонники автомобилей разочарованы.</p>
-				</li>
-				<li>
-					<a href="#"><img src="img/pic1.jpg" alt=""></a>
-					<h3 class="h3"><a href="#">Subaru BRZ обзаведется турбомотором</a></h3>
-					<p>Компания Subaru планирует выпустить турбированную версию своего спорт-купе BRZ, сообщает «5 колесо». Многие поклонники автомобилей разочарованы.</p>
-				</li>
-				<li>
-					<a href="#"><img src="img/pic1.jpg" alt=""></a>
-					<h3 class="h3"><a href="#">Subaru BRZ обзаведется турбомотором</a></h3>
-					<p>Компания Subaru планирует выпустить турбированную версию своего спорт-купе BRZ, сообщает «5 колесо». Многие поклонники автомобилей разочарованы.</p>
-				</li>
-			</ul>
-			<!-- END .main-news -->
+		<div class="l-col3">
 			<!-- BEGIN .catalog -->
-			<div class="catalog catalog_main">
+			<div class="catalog">
 				<h2 class="title">Каталог машинок</h2>
+				<!-- BEGIN .breadcrumps -->
+				<ul class="breadcrumps">
+					<li><a href="#">Главная</a><span>→</span></li>
+					<li>Каталог машинок</li>					    
+				</ul>
+				<!-- END .breadcrumps -->				
 				<ul class="catalog__list">
 					<li><a href="catalog__cars_1">Быстрые</a></li>
 					<li><a href="catalog__cars_2">Компактные</a></li>
@@ -156,161 +62,215 @@
 					<li><a href="#">Скромные</a></li>
 					<li><a href="#">Обычные</a></li> 
 				</ul>
+				<!-- BEGIN .filter -->
+				<form action="" class="filter filter_mod">
+					<div class="filter__l">
+						<!-- BEGIN .filter__price -->						
+						<div class="filter__price">
+							<b>Цена</b>
+							<ul>
+								<li><label for="fp1">Любая<input id="fp1" type="radio" name="price"></label></li>
+								<li><label for="fp2">400 - 500 т.р.<input id="fp2" type="radio" name="price"></label></li>
+								<li><label for="fp3">500 - 600 т.р.<input id="fp3" type="radio" name="price"></label></li>
+								<li><label for="fp4">600 - 900 т.р.<input id="fp4" type="radio" name="price"></label></li>
+								<li><label for="fp5">от 900 т.р.<input id="fp5" type="radio" name="price"></label></li>
+							</ul>
+						</div>
+						<!-- END .filter__price -->
+						<!-- BEGIN .filter__comfort -->
+						<div class="filter__comfort">
+							<div class="range-wrap">
+								<b>Крутость</b>							
+								<div class="range">
+									<div class="range__out">
+										<div class="range__slider ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all"><div class="ui-slider-range ui-widget-header ui-slider-range-max" style="width: 100%;"></div><a class="ui-slider-handle ui-state-default ui-corner-all" href="#" style="left: 0%;"></a></div>
+									</div>
+									<input type="hidden">
+									<span class="range__full"></span>								
+									<span class="range__empty"></span>	
+								</div>
+							</div>
+							<div class="range-wrap">
+								<b>Комфорт</b>							
+								<div class="range">
+									<div class="range__out">
+										<div class="range__slider ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all"><div class="ui-slider-range ui-widget-header ui-slider-range-max" style="width: 100%;"></div><a class="ui-slider-handle ui-state-default ui-corner-all" href="#" style="left: 0%;"></a></div>
+									</div>
+									<input type="hidden">
+									<span class="range__full"></span>
+									<span class="range__empty"></span>
+								</div>
+							</div>
+							<div class="clr"></div>
+						</div>
+						<!-- END .filter__comfort -->
+					</div>
+					<div class="filter__r">
+						<!-- BEGIN .filter__cat -->
+						<div class="filter__cat">
+							<b>Категории</b>
+							<ul class="filter__cat-1">
+								<li><label for="fc1"><input id="fc1" type="checkbox" name="category"><i></i>Для города</label></li>
+								<li><label for="fc2"><input id="fc2" type="radio" name="category"><i></i>Для шоппинга</label></li>
+								<li><label for="fc7"><input id="fc7" type="radio" name="category"><i></i>Люкс</label></li>
+							</ul>
+							<ul class="filter__cat-2">
+								<li><label for="fc3"><input id="fc3" type="radio" name="category"><i></i>Для дачи</label></li>
+								<li><label for="fc4"><input id="fc4" type="checkbox" name="category"><i></i>Для детей</label></li>
+								<li><label for="fc8"><input id="fc8" type="radio" name="category"><i></i>Fashion</label></li>
+							</ul>
+							<ul class="filter__cat-3">
+								<li><label for="fc5"><input id="fc5" type="radio" name="category"><i></i>Для дочки</label></li>
+								<li><label for="fc6"><input id="fc6" type="radio" name="category"><i></i>Для всей семьи</label></li>
+								<li><label for="fc9"><input id="fc9" type="checkbox" name="category"><i></i>Эконом</label></li>
+							</ul>
+						</div>
+						<!-- END .filter__cat -->
+						<!-- BEGIN .filter__btn -->
+						<div class="filter__btn">
+							<input type="submit" value="Поехали!">
+						</div>
+						<!-- END .filter__btn -->
+					</div>					
+				</form>
+				<!-- END .filter -->
 				<ul class="catalog__cars catalog__cars_1" style="display: block">
 					<li>
-						<a class="catalog__pic" href="#"><img src="img/pic2.jpg" alt=""></a>
+						<a class="catalog__pic" href="#">
+							<img src="img/pic8.jpg" alt="">
+							<span>Экономичность<b>5+</b></span>
+						</a>
+						<div class="catalog__name"><b>599 т.р.</b><a href="#">Lada Kalina111</a></div>
+					</li>
+					<li>
+						<a class="catalog__pic" href="#">
+							<img src="img/pic8.jpg" alt="">
+							<span>Крутость<b>5+</b></span>
+						</a>
+						<div class="catalog__name"><b>599 т.р.</b><a href="#">Alfa Romeo Mersedes Benz</a></div>
+					</li>
+					<li>
+						<a class="catalog__pic" href="#">
+							<img src="img/pic8.jpg" alt="">
+							<span>Стильность<b>5+</b></span>
+						</a>
+						<div class="catalog__name"><b>2 599 т.р.</b><a href="#">Lada Kalina</a></div>
+					</li>
+					<li>
+						<a class="catalog__pic" href="#"><img src="img/pic8.jpg" alt=""></a>
 						<div class="catalog__name"><b>599 т.р.</b><a href="#">Lada Kalina</a></div>
 					</li>
 					<li>
-						<a class="catalog__pic" href="#"><img src="img/pic2.jpg" alt=""></a>
+						<a class="catalog__pic" href="#"><img src="img/pic8.jpg" alt=""></a>
 						<div class="catalog__name"><b>599 т.р.</b><a href="#">Lada Kalina</a></div>
 					</li>
 					<li>
-						<a class="catalog__pic" href="#"><img src="img/pic2.jpg" alt=""></a>
+						<a class="catalog__pic" href="#"><img src="img/pic8.jpg" alt=""></a>
 						<div class="catalog__name"><b>599 т.р.</b><a href="#">Lada Kalina</a></div>
 					</li>
 					<li>
-						<a class="catalog__pic" href="#"><img src="img/pic2.jpg" alt=""></a>
+						<a class="catalog__pic" href="#"><img src="img/pic8.jpg" alt=""></a>
 						<div class="catalog__name"><b>599 т.р.</b><a href="#">Lada Kalina</a></div>
 					</li>
 					<li>
-						<a class="catalog__pic" href="#"><img src="img/pic2.jpg" alt=""></a>
+						<a class="catalog__pic" href="#"><img src="img/pic8.jpg" alt=""></a>
 						<div class="catalog__name"><b>599 т.р.</b><a href="#">Lada Kalina</a></div>
 					</li>
 					<li>
-						<a class="catalog__pic" href="#"><img src="img/pic2.jpg" alt=""></a>
+						<a class="catalog__pic" href="#"><img src="img/pic8.jpg" alt=""></a>
 						<div class="catalog__name"><b>599 т.р.</b><a href="#">Lada Kalina</a></div>
 					</li>
 					<li>
-						<a class="catalog__pic" href="#"><img src="img/pic2.jpg" alt=""></a>
+						<a class="catalog__pic" href="#"><img src="img/pic8.jpg" alt=""></a>
 						<div class="catalog__name"><b>599 т.р.</b><a href="#">Lada Kalina</a></div>
 					</li>
 					<li>
-						<a class="catalog__pic" href="#"><img src="img/pic2.jpg" alt=""></a>
+						<a class="catalog__pic" href="#"><img src="img/pic8.jpg" alt=""></a>
 						<div class="catalog__name"><b>599 т.р.</b><a href="#">Lada Kalina</a></div>
 					</li>
-				</ul>
+					<li>
+						<a class="catalog__pic" href="#"><img src="img/pic8.jpg" alt=""></a>
+						<div class="catalog__name"><b>599 т.р.</b><a href="#">Lada Kalina</a></div>
+					</li>
+				</ul>	
 				<ul class="catalog__cars catalog__cars_2">
 					<li>
-						<a class="catalog__pic" href="#"><img src="img/pic2.jpg" alt=""></a>
+						<a class="catalog__pic" href="#">
+							<img src="img/pic8.jpg" alt="">
+							<span>Экономичность<b>5+</b></span>
+						</a>
+						<div class="catalog__name"><b>599 т.р.</b><a href="#">Lada Kalina222</a></div>
+					</li>
+					<li>
+						<a class="catalog__pic" href="#">
+							<img src="img/pic8.jpg" alt="">
+							<span>Крутость<b>5+</b></span>
+						</a>
+						<div class="catalog__name"><b>599 т.р.</b><a href="#">Alfa Romeo Mersedes Benz</a></div>
+					</li>
+					<li>
+						<a class="catalog__pic" href="#">
+							<img src="img/pic8.jpg" alt="">
+							<span>Стильность<b>5+</b></span>
+						</a>
+						<div class="catalog__name"><b>2 599 т.р.</b><a href="#">Lada Kalina</a></div>
+					</li>
+					<li>
+						<a class="catalog__pic" href="#"><img src="img/pic8.jpg" alt=""></a>
 						<div class="catalog__name"><b>599 т.р.</b><a href="#">Lada Kalina</a></div>
 					</li>
 					<li>
-						<a class="catalog__pic" href="#"><img src="img/pic2.jpg" alt=""></a>
+						<a class="catalog__pic" href="#"><img src="img/pic8.jpg" alt=""></a>
 						<div class="catalog__name"><b>599 т.р.</b><a href="#">Lada Kalina</a></div>
 					</li>
 					<li>
-						<a class="catalog__pic" href="#"><img src="img/pic2.jpg" alt=""></a>
+						<a class="catalog__pic" href="#"><img src="img/pic8.jpg" alt=""></a>
 						<div class="catalog__name"><b>599 т.р.</b><a href="#">Lada Kalina</a></div>
 					</li>
 					<li>
-						<a class="catalog__pic" href="#"><img src="img/pic2.jpg" alt=""></a>
+						<a class="catalog__pic" href="#"><img src="img/pic8.jpg" alt=""></a>
 						<div class="catalog__name"><b>599 т.р.</b><a href="#">Lada Kalina</a></div>
 					</li>
 					<li>
-						<a class="catalog__pic" href="#"><img src="img/pic2.jpg" alt=""></a>
+						<a class="catalog__pic" href="#"><img src="img/pic8.jpg" alt=""></a>
 						<div class="catalog__name"><b>599 т.р.</b><a href="#">Lada Kalina</a></div>
 					</li>
 					<li>
-						<a class="catalog__pic" href="#"><img src="img/pic2.jpg" alt=""></a>
+						<a class="catalog__pic" href="#"><img src="img/pic8.jpg" alt=""></a>
 						<div class="catalog__name"><b>599 т.р.</b><a href="#">Lada Kalina</a></div>
 					</li>
 					<li>
-						<a class="catalog__pic" href="#"><img src="img/pic2.jpg" alt=""></a>
+						<a class="catalog__pic" href="#"><img src="img/pic8.jpg" alt=""></a>
 						<div class="catalog__name"><b>599 т.р.</b><a href="#">Lada Kalina</a></div>
 					</li>
 					<li>
-						<a class="catalog__pic" href="#"><img src="img/pic2.jpg" alt=""></a>
-						<div class="catalog__name"><b>599 т.р.</b><a href="#">Lada Kalina</a></div>
-					</li>
-				</ul>
-				<ul class="catalog__cars catalog__cars_3">
-					<li>
-						<a class="catalog__pic" href="#"><img src="img/pic2.jpg" alt=""></a>
+						<a class="catalog__pic" href="#"><img src="img/pic8.jpg" alt=""></a>
 						<div class="catalog__name"><b>599 т.р.</b><a href="#">Lada Kalina</a></div>
 					</li>
 					<li>
-						<a class="catalog__pic" href="#"><img src="img/pic2.jpg" alt=""></a>
+						<a class="catalog__pic" href="#"><img src="img/pic8.jpg" alt=""></a>
 						<div class="catalog__name"><b>599 т.р.</b><a href="#">Lada Kalina</a></div>
 					</li>
-					<li>
-						<a class="catalog__pic" href="#"><img src="img/pic2.jpg" alt=""></a>
-						<div class="catalog__name"><b>599 т.р.</b><a href="#">Lada Kalina</a></div>
-					</li>
-					<li>
-						<a class="catalog__pic" href="#"><img src="img/pic2.jpg" alt=""></a>
-						<div class="catalog__name"><b>599 т.р.</b><a href="#">Lada Kalina</a></div>
-					</li>
-					<li>
-						<a class="catalog__pic" href="#"><img src="img/pic2.jpg" alt=""></a>
-						<div class="catalog__name"><b>599 т.р.</b><a href="#">Lada Kalina</a></div>
-					</li>
-					<li>
-						<a class="catalog__pic" href="#"><img src="img/pic2.jpg" alt=""></a>
-						<div class="catalog__name"><b>599 т.р.</b><a href="#">Lada Kalina</a></div>
-					</li>
-					<li>
-						<a class="catalog__pic" href="#"><img src="img/pic2.jpg" alt=""></a>
-						<div class="catalog__name"><b>599 т.р.</b><a href="#">Lada Kalina</a></div>
-					</li>
-					<li>
-						<a class="catalog__pic" href="#"><img src="img/pic2.jpg" alt=""></a>
-						<div class="catalog__name"><b>599 т.р.</b><a href="#">Lada Kalina</a></div>
-					</li>
-				</ul>
+				</ul>					
 			</div>
 			<!-- END .catalog -->
-			<!-- BEGIN .girlfriends -->
-			<div class="girlfriends">
-				<h2 class="title">Подружки на дорогах</h2>
-				<ul>
-					<li>
-						<a href="#"><img src="img/pic3.jpg" alt=""></a>
-						<a href="#">Anfisa Grishokoba</a>
-						<div class="girlfriends__car">
-							<span>BMW X5</span>
-							<i style="background: #9cd01c"></i>
-						</div>
-					</li>
-					<li>
-						<a href="#"><img src="img/pic3.jpg" alt=""></a>
-						<a href="#">fishka89</a>
-						<div class="girlfriends__car">
-							<span>Hyundai Getpz</span>
-							<i style="background: #d01c42"></i>
-						</div>
-					</li>
-					<li>
-						<a href="#"><img src="img/pic3.jpg" alt=""></a>
-						<a href="#">Anfisa</a>
-						<div class="girlfriends__car">
-							<span>BMW X5</span>
-							<i style="background: #9cd01c"></i>
-						</div>
-					</li>
-					<li>
-						<a href="#"><img src="img/pic3.jpg" alt=""></a>
-						<a href="#">Anfisa Grishokoba</a>
-						<div class="girlfriends__car">
-							<span>Hyundai Getpz</span>
-							<i style="background: #d01c42"></i>
-						</div>
-					</li>
-					<li>
-						<a href="#"><img src="img/pic3.jpg" alt=""></a>
-						<a href="#">fishka89</a>
-						<div class="girlfriends__car">
-							<span>Hyundai Getpz</span>
-							<i style="background: #d01c42"></i>
-						</div>
-					</li>
-				</ul>
+			<!-- BEGIN .pagination -->
+			<div class="pagination">
+				<a class="pagination__prev" href="#">< Предудущая</a>
+				<a href="#">1</a>
+				<a href="#">2</a>
+				<a href="#">3</a>
+				<a href="#">4</a>
+				<a href="#">5</a>
+				<a href="#">6</a>
+				<a href="#">7</a>
+				<a class="pagination__next" href="#">Следующая ></a>
 			</div>
-			<!-- END .girlfriends -->
+			<!-- END .pagination -->
 		</div>
-		<div class="l-col2">
+		<div class="l-col4">
 			<!-- BEGIN .top -->
-			<div class="top">
+			<div class="top top_mod">
 				<h2 class="title">TOP машинки</h2>
 				<ul class="top__list">
 					<li class="top__list-1"><a class="active" href="top__slider_1">Эконом</a></li>
@@ -327,25 +287,25 @@
 									<a href="#">Land Rover</a>
 									<b>от 799 т.р.</b>
 								</div>
-								<a href="#"><img src="img/pic4.jpg" alt=""></a>							
+								<a href="#"><img src="img/pic9.jpg" alt=""></a>							
 							</li>
 							<li>
 								<div class="top__car">
 									<a href="#">Ferrari</a>
 									<b>от 799 т.р.</b>
 								</div>
-								<a href="#"><img src="img/pic4.jpg" alt=""></a>							
+								<a href="#"><img src="img/pic9.jpg" alt=""></a>							
 							</li>
 							<li>
 								<div class="top__car">
 									<a href="#">Mini Cooper</a>
 									<b>от 799 т.р.</b>
 								</div>
-								<a href="#"><img src="img/pic4.jpg" alt=""></a>							
+								<a href="#"><img src="img/pic9.jpg" alt=""></a>							
 							</li>
 						</ul>
 					</div>
-					<div class="top__slider top__slider_2">
+					<div class="top__slider top__slider_2" style="display: none;">
 						<button class="top__slider-prev"></button>				
 						<button class="top__slider-next"></button>	
 						<ul class="top__items">
@@ -354,25 +314,25 @@
 									<a href="#">Land Rover</a>
 									<b>от 799 т.р.</b>
 								</div>
-								<a href="#"><img src="img/pic4.jpg" alt=""></a>							
+								<a href="#"><img src="img/pic9.jpg" alt=""></a>							
 							</li>
 							<li>
 								<div class="top__car">
 									<a href="#">Ferrari</a>
 									<b>от 799 т.р.</b>
 								</div>
-								<a href="#"><img src="img/pic4.jpg" alt=""></a>							
+								<a href="#"><img src="img/pic9.jpg" alt=""></a>							
 							</li>
 							<li>
 								<div class="top__car">
 									<a href="#">Mini Cooper</a>
 									<b>от 799 т.р.</b>
 								</div>
-								<a href="#"><img src="img/pic4.jpg" alt=""></a>							
+								<a href="#"><img src="img/pic9.jpg" alt=""></a>							
 							</li>
 						</ul>
 					</div>
-					<div class="top__slider top__slider_3">
+					<div class="top__slider top__slider_3" style="display: none;">
 						<button class="top__slider-prev"></button>				
 						<button class="top__slider-next"></button>	
 						<ul class="top__items">
@@ -381,27 +341,41 @@
 									<a href="#">Land Rover</a>
 									<b>от 799 т.р.</b>
 								</div>
-								<a href="#"><img src="img/pic4.jpg" alt=""></a>							
+								<a href="#"><img src="img/pic9.jpg" alt=""></a>							
 							</li>
 							<li>
 								<div class="top__car">
 									<a href="#">Ferrari</a>
 									<b>от 799 т.р.</b>
 								</div>
-								<a href="#"><img src="img/pic4.jpg" alt=""></a>							
+								<a href="#"><img src="img/pic9.jpg" alt=""></a>							
 							</li>
 							<li>
 								<div class="top__car">
 									<a href="#">Mini Cooper</a>
 									<b>от 799 т.р.</b>
 								</div>
-								<a href="#"><img src="img/pic4.jpg" alt=""></a>							
+								<a href="#"><img src="img/pic9.jpg" alt=""></a>							
 							</li>
 						</ul>
 					</div>
 				</div>
 			</div>
 			<!-- END .top -->
+			<!-- BEGIN .advertising -->
+			<div class="advertising">
+				<img src="img/pic10.jpg" alt="">
+			</div>
+			<!-- END .advertising -->
+			<!-- BEGIN .aside-news -->
+			<div class="aside-news">
+				<a href="#"><img src="img/pic11.jpg" alt=""></a>
+				<a href="#">Subaru BRZ обзаведется турбомотором</a>
+				<p>Компания Subaru планирует выпустить турбированную версию своего спорт-купе BRZ, сообщает «5 колесо». Многие поклонники автомобилей разочарованы.</p>
+			</div>
+			<!-- END .aside-news -->
+		</div>
+		<div class="l-col2">			
 			<!-- BEGIN .banner -->
 			<div class="banner">
 				<img src="img/pic5.jpg" alt="">
@@ -448,7 +422,7 @@
 			<!-- END .gossip -->
 		</div>
 	</div>
-	<!-- END .main -->
+	<!-- END .layout -->
 	<!-- BEGIN .push -->
 	<div class="push"></div>
 	<!-- END .push -->
@@ -497,7 +471,7 @@
 </div>
 <!-- END .footer -->
 <!-- BEGIN .bg -->
-<div class="bg" style="display: none"></div>
+<div class="bg1" style="display: none"></div>
 <div class="bgbtn"></div>
 <!-- END .bg -->
 </body>

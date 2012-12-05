@@ -29,8 +29,15 @@ input, textarea, button {
 	border: none;
 	outline: none;
 }
+table {
+	border-spacing: 0;
+	border-collapse: collapse;
+}
+button {
+	cursor: pointer;
+}
 .h2 {	
-	font: 24px/38px 'plumbbold', Arial, sans-serif;
+	font: 24px 'plumbbold', Arial, sans-serif;
 	color: #fff;
 }
 .h3 {
@@ -44,6 +51,22 @@ input, textarea, button {
 	width: 1247px;
 	height: 2046px;
 	background: url(../img/bg.png) no-repeat 50% 0;
+}
+.bg1 {
+	position: absolute;
+	top: 0;
+	left: 328px;
+	width: 1247px;
+	height: 1681px;
+	background: url(../img/bg1.png) no-repeat 50% 0;
+}
+.bg2 {
+	position: absolute;
+	top: 0;
+	left: 328px;
+	width: 1247px;
+	height: 3172px;
+	background: url(../img/bg2.png) no-repeat 50% 0;
 }
 .bgbtn {
 	position: fixed;
@@ -89,32 +112,42 @@ input, textarea, button {
 .header {
 	position: relative;
 	height: 120px;
-	padding-left: 438px;
-	overflow: hidden;
 }
 .logo {
 	position: absolute;
 	top: 0;
-	left: 0;
+	left: 57px;
 	@include sized-sprite($icons, logo);
 	a {
+		position: relative;
 		display: block;
 		width: 100%;
 		height: 100%;
 		@include hide-text;
+		//z-index: 10;
+		&:hover {			
+			.logo__wing-r {
+				@include animation(rotate-r, 0.3s, cubic-bezier(0.785, 0.135, 0.15, 0.86), both);
+			}
+			.logo__wing-l {			
+				@include animation(rotate-l, 0.3s, cubic-bezier(0.785, 0.135, 0.15, 0.86), both);
+			}	
+		}
 	}
 	i {
 		position: absolute;
-		top: 13px;
+		top: 13px;		
 	}
 }
 .logo__wing-l {
-	left: 0;
-	@include sized-sprite($icons, logo-l);
+	left: -57px;
+	@include sized-sprite($icons, logo-l);	
+	@include transform-origin(100%, 100%)
 }
 .logo__wing-r {
-	right: 1px;
+	right: -56px;
 	@include sized-sprite($icons, logo-r);
+	@include transform-origin(0%, 100%)
 }
 //nav
 .nav {
@@ -166,8 +199,16 @@ input, textarea, button {
 	height: 45px;
 	padding-left: 27px;
 	background: #5371b1; 	
-	a {
+	span {
 		position: absolute;
+	}
+	&:hover {
+		.enter__us {
+			color: $green;
+		}
+		.enter__fb, .enter__vk {
+			border: 1px solid #d9dee0;
+		}
 	}
 }
 .enter__us {
@@ -175,15 +216,9 @@ input, textarea, button {
 	left: 27px;
 	font: 16px 'plumbregular', Arial, sans-serif; 
 	color: #fff;
-	&:hover {
-		color: $green;
-	}
 }
 .enter__fb, .enter__vk {
 	top: 11px;
-	&:hover {
-		border: 1px solid #d9dee0;
-	}
 }
 .enter__fb {
 	top: 11px;
@@ -292,211 +327,28 @@ input, textarea, button {
 		border-color: $gray;
 	}
 }
-//catalog
-.catalog {
-	.title {
-		margin-bottom: 35px;
-	}
-}
-.catalog__list {
+//breadcrumps 
+.breadcrumps {
 	padding-left: 10px;
-	margin-bottom: 25px;
-	overflow: hidden;
-	li {
-		float: left;
-		margin: 0 25px 15px 0;
-	}
-	a {
-		color: $blue;
-		font-size: 18px;
-		border-bottom: 1px dashed $blue;
-		&:hover {
-			color: $green;
-			border: none;
-		}
-		&:active {
-			color: $pink;
-		}
-	}
-}
-.catalog__cars {
-	display: none;
-	padding-left: 10px;
-	margin: 0 -50px 5px 0;
-	overflow: hidden;
-	li {
-		float: left;
-		width: 186px;
-		margin: 0 55px 45px 0;
-	}
-	img {
-		@include border-radius(93px);
-	}
-	span {
-		display: block;
-		margin-top: 20px;
-		a {
-			float: left;
-			@extend .link;
-		}
-	}
-	b {
-		float: right;
-	}
-}
-//top
-.top {
-	.title {
-		margin-bottom: 27px;
-	}
-}
-.top__list {
-	margin: 0 -20px 15px 0;
 	overflow: hidden;	
 	li {
-		float: left;	
-		margin-right: 13px;	
-	}
-	a {
-		display: block;
-		height: 21px;
-		line-height: 21px;
-		border: 2px solid #d8d8d8;
-		text-align: center;
-		color: $dark;
-		&:hover {
-			background: $green;
-			color: #fff;
-		}
-		&.active {
-			border: 2px solid $pink;
-			background: $pink;
-			color: #fff;
-		}
-	}	
-}
-.top__list-1 {
-	a {
-		width: 82px;
-	}	
-}
-.top__list-2 {
-	a {
-		width: 72px;
-	}	
-}
-.top__sliders {
-	position: relative;
-	width: 273px;
-	height: 220px;
-	margin-bottom: 15px;
-}
-.top__slider {
-	display: none;
-	position: absolute;
-	width: 273px;
-	height: 220px;	
-	overflow: hidden;
-	button {
-		position: absolute;
-		top: 95px;
-		z-index: 10;
-		cursor: pointer;
-	}
-}
-.top__slider-prev {
-	left: 10px;
-	@include sized-sprite($icons, slider-l);
-	&:hover {
-		@include sized-sprite($icons, slider-l-h);
-	}
-	&:active {
-		@include sized-sprite($icons, slider-l-a);
-	}
-}
-.top__slider-next {
-	right: 10px;
-	@include sized-sprite($icons, slider-r);
-	&:hover {
-		@include sized-sprite($icons, slider-r-h);
-	}
-	&:active {
-		@include sized-sprite($icons, slider-r-a);
-	}
-}
-.top__items {
-	position: absolute;
-	width: 2000em;
-	li {
 		float: left;
-		width: 273px;
-		height: 220px;
-		text-align: center;
 	}
-	img {
-		@include border-radius(89px);
-	}
-}
-.top__car {
-	margin-bottom: 11px;
-	padding: 0 5px;
-	overflow: hidden;
 	a {
-		float: left;
 		@extend .link;
 	}
-	b {
-		float: right;
+	span {
+		margin: 0 8px;
 	}
+}
+//advertising
+.advertising {
+	margin-bottom: 35px;
 }
 //banner
 .banner {
 	margin-bottom: 54px;
 	img {
 		display: block;
-	}
-}
-//range
-.range-wrap {
-	float: left;
-	margin-right: 38px;
-}
-.range {
-	position: relative;
-	width: 148px;
-	height: 12px;
-	padding-bottom: 12px;
-	span {
-		position: absolute;
-		top: 0;
-		left: 0;
-	}
-}
-.range__empty {
-	@include sized-sprite($icons, range);
-}
-.range__full {	
-	@include sized-sprite($icons, range-a);
-	width: 0;
-	z-index: 10;
-}
-.range__out {
-	position: absolute;
-	top: 0;
-	left: -3px;
-	width: 148px;
-	height: 12px;
-}
-.ui-slider-handle {
-	position: absolute;
-	bottom: -12px;
-	left: -3px;
-	@include sized-sprite($icons, hand);
-	outline: none;
-	&:hover {
-		@include sized-sprite($icons, hand-h);
-	}
-	&:active {
-		@include sized-sprite($icons, hand-a);
 	}
 }

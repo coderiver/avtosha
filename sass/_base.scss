@@ -40,3 +40,57 @@ $icons: sprite-map("icons/*.png", $spacing: 10px);
     font-weight: normal;
     font-style: normal;
 }
+//animation logo
+@mixin transition($what: all, $length: 1s, $easing: ease-in-out) {
+  -moz-transition:    $what $length $easing;
+  -webkit-transition: $what $length $easing;
+  -o-transition:      $what $length $easing;
+  -ms-transition:     $what $length $easing;
+  transition:         $what $length $easing;
+}
+@mixin animation($what: all, $length: 1s, $easing: ease-in-out, $fillmode: both) {
+  -moz-animatiom:    $what $length $easing 0s 1 normal $fillmode;
+  -webkit-animation: $what $length $easing 0s 1 normal $fillmode;
+  -o-animation:      $what $length $easing 0s 1 normal $fillmode;
+  animation:         $what $length $easing 0s 1 normal $fillmode;
+}
+@include keyframes(rotate-l) {
+  0% {
+    @include transform(rotate(-15deg));    
+  }
+  20% {
+    @include transform(rotate(0deg));
+  }
+  40% {
+    @include transform(rotate(-15deg));    
+  }
+  60% {
+    @include transform(rotate(0deg));
+  }
+  80% { 
+    @include transform(rotate(-15deg));    
+  }
+  100% { 
+    @include transform(rotate(0deg));
+  }
+}
+@include keyframes(rotate-r) {
+  0% {
+    @include transform(rotate(15deg));    
+  }
+  20% {
+    @include transform(rotate(0deg));
+  }
+  40% {
+    @include transform(rotate(15deg));    
+  }
+  60% {
+    @include transform(rotate(0deg));
+  }
+  80% { 
+    @include transform(rotate(15deg));    
+  }
+  100% { 
+    @include transform(rotate(0deg));
+  }
+}

@@ -2,7 +2,7 @@ $(document).ready(function() {
 
 //bg
 $('.bgbtn').click(function() {
-	$('.bg').show();
+	$('.bg, .bg1, .bg2').show();
 });	
 
 //filter radio
@@ -12,38 +12,44 @@ $('.filter__price label').click(function() {
 });
 
 //filter range
-$('.range__slider').each(function() {
-  $(this).empty().slider({
-  	range: "max",
-	  min: 0,
-	  max: 5,
-	  value: 0,
-	  slide: function( event, ui ) {
-		 	switch (ui.value) {
-		    case 1:
-		      $(this).parent().next().next().css('width', '28px');
-	  			$(this).parent().next().val(ui.value);
-		      break
-		    case 2:
-		      $(this).parent().next().next().css('width', '58px');
-	  			$(this).parent().next().val(ui.value);
-		      break
-		    case 3:
-		      $(this).parent().next().next().css('width', '88px');
-	  			$(this).parent().next().val(ui.value);
-		      break
-		    case 4:
-		      $(this).parent().next().next().css('width', '118px');
-	  			$(this).parent().next().val(ui.value);
-		      break
-		    case 5:
-		      $(this).parent().next().next().css('width', '148px');
-	  			$(this).parent().next().val(ui.value);
-		      break
-			};
-		}
-  });
-});
+if ($('.range__slider').length>0) {
+	$('.range__slider').each(function() {
+	  $(this).empty().slider({
+	  	range: "max",
+		  min: 0,
+		  max: 5,
+		  value: 0,
+		  slide: function( event, ui ) {
+			 	switch (ui.value) {
+			 		case 0:
+			      $(this).parent().next().next().css('width', '0');
+		  			$(this).parent().next().val(ui.value);
+			      break
+			    case 1:
+			      $(this).parent().next().next().css('width', '20%');
+		  			$(this).parent().next().val(ui.value);
+			      break
+			    case 2:
+			      $(this).parent().next().next().css('width', '40%');
+		  			$(this).parent().next().val(ui.value);
+			      break
+			    case 3:
+			      $(this).parent().next().next().css('width', '60%');
+		  			$(this).parent().next().val(ui.value);
+			      break
+			    case 4:
+			      $(this).parent().next().next().css('width', '80%');
+		  			$(this).parent().next().val(ui.value);
+			      break
+			    case 5:
+			      $(this).parent().next().next().css('width', '100%');
+		  			$(this).parent().next().val(ui.value);
+			      break
+				};
+			}
+	  });
+	});
+};
 
 //catalog
 $('.catalog__list a').click(function() {
@@ -64,23 +70,41 @@ $('.top__list a').click(function() {
 });
 
 //top sliders
-$(".top__slider_1").scrollable({
-	items: '.top__items',
-	prev: '.top__slider_1 .top__slider-prev',
-	next: '.top__slider_1 .top__slider-next',
-	circular: true
-});
-$(".top__slider_2").scrollable({
-	items: '.top__items',
-	prev: '.top__slider_2 .top__slider-prev',
-	next: '.top__slider_2 .top__slider-next',
-	circular: true
-});
-$(".top__slider_3").scrollable({
-	items: '.top__items',
-	prev: '.top__slider_3 .top__slider-prev',
-	next: '.top__slider_3 .top__slider-next',
-	circular: true
-});
+if ($(".top__slider_1").length>0) {
+	$(".top__slider_1").scrollable({
+		items: '.top__items',
+		prev: '.top__slider_1 .top__slider-prev',
+		next: '.top__slider_1 .top__slider-next',
+		circular: true
+	});
+};
+if ($(".top__slider_2").length>0) {
+	$(".top__slider_2").scrollable({
+		items: '.top__items',
+		prev: '.top__slider_2 .top__slider-prev',
+		next: '.top__slider_2 .top__slider-next',
+		circular: true
+	});
+};
+if ($(".top__slider_3").length>0) {
+	$(".top__slider_3").scrollable({
+		items: '.top__items',
+		prev: '.top__slider_3 .top__slider-prev',
+		next: '.top__slider_3 .top__slider-next',
+		circular: true
+	});
+};
+
+//slider
+if ($('.slider').length>0) {
+	$('.slider').scrollable({
+		items: '.slider__items',
+		prev: '.slider-prev',
+		next: '.slider-next',
+		circular: true
+	}).navigator({
+		navi: '.slider-navi'
+	});
+};
 
 });
