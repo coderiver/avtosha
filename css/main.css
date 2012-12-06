@@ -82,11 +82,17 @@
 .about__desc span { display: block; padding: 20px 0 19px 0; font: 18px 'plumbbold', Arial, sans-serif; }
 .about__desc p { margin-bottom: 10px; line-height: 1.5; }
 
-.main-news { padding-left: 10px; margin: 0 -30px 47px 0; overflow: hidden; }
-.main-news li { float: left; width: 290px; margin-right: 23px; }
-.main-news img { display: block; margin-bottom: 20px; }
-.main-news .h3 { margin-bottom: 20px; font-weight: normal; }
-.main-news p { line-height: 1.5; }
+.main-news, .article-news { padding-left: 10px; overflow: hidden; }
+.main-news li, .article-news li { float: left; }
+.main-news img, .article-news img { display: block; margin-bottom: 20px; }
+.main-news .h3, .article-news .h3 { margin-bottom: 20px; font-weight: normal; }
+.main-news p, .article-news p { line-height: 1.5; }
+
+.main-news { margin: 0 -30px 47px 0; }
+.main-news li { width: 290px; margin-right: 23px; }
+
+.article-news { margin: 0 0 65px 0; }
+.article-news li { width: 274px; margin-right: 47px; }
 
 .girlfriends { margin-bottom: 65px; font-size: 12px; }
 .girlfriends .title { margin-bottom: 32px; }
@@ -96,15 +102,6 @@
 
 .girlfriends__car { position: absolute; top: 33px; left: 83px; width: 70px; color: #323232; }
 .girlfriends__car i { position: absolute; top: 0; left: -16px; width: 12px; height: 12px; }
-
-.gossip { margin-bottom: 65px; }
-.gossip .title { margin-bottom: 22px; }
-.gossip p { line-height: 1.5; }
-.gossip li { margin-bottom: 30px; }
-
-.gossip__person { margin-bottom: 10px; }
-.gossip__person img { float: left; padding-top: 3px; margin-right: 8px; }
-.gossip__person span { display: block; font-size: 12px; color: #7f7f7f; }
 
 .catalog_main { margin-bottom: 0px; }
 .catalog_main .title { margin-bottom: 35px; }

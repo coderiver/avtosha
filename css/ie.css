@@ -1,1 +1,2 @@
-.lteie8 .title { display: inline; zoom: 1; }
+.lteie8 .title, .lteie8 .catalog_main li, .lteie8 .catalog__cars li { display: inline; zoom: 1; }
+.lteie8 .profile__field { line-height: 23px; }

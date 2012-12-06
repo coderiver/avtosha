@@ -107,4 +107,56 @@ if ($('.slider').length>0) {
 	});
 };
 
+//gallery
+if ($('.gallery__slider').length>0) {
+	$('.gallery__slider').scrollable({
+		items: '.gallery__items',
+		prev: '.gallery__slider-prev',
+		next: '.gallery__slider-next',
+		circular: true
+	});
+};
+var api = $('.gallery__slider').data('scrollable');
+$('.gallery__thumb a').click(function() {
+    var attr_href = $(this).attr('href');
+    api.seekTo(attr_href, 400);
+    return false;
+});
+
+//scroll
+if ($('.gallery__thumb').length>0) {
+	val_th = $('.gallery__thumb li').length;
+	$('.gallery__thumb ul').css('width', val_th*97+4+'px');
+	$('.gallery__thumb').jScrollPane();
+};
+
+//popup
+$('.enter_user').click(function() {
+	$('.popup-bg, .popup_enter').fadeIn();
+	return false;
+});
+$('.enter_login-fb, .enter_login-vk').click(function() {
+	$('.popup-bg, .popup_profile').fadeIn();
+	return false;
+});
+$('.popup__close, .popup-bg').click(function() {
+	$('.popup-bg, .popup_enter, .popup_profile').fadeOut();
+});
+
+//pic load
+$('.profile__pic-load').click(function() {
+	$(this).hide();
+	$(this).next().show();
+});
+
+//select
+$('.select span').click(function () {
+    $(this).next().slideDown();
+  });
+$('.select li').click(function() {
+	sel_txt = $(this).text();
+	$(this).parent().prev().html(sel_txt);
+	$(this).parent().slideUp();
+});
+
 });

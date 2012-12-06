@@ -28,7 +28,7 @@
 			<li><a href="#">Как выбрать машину</a></li>
 			<li><a href="#">Как покупать машину</a></li>			                
 		</ul>
-		<a class="enter" href="#">
+		<a class="enter enter_user" href="#">
 			<span class="enter__us">Войти</span>
 			<span class="enter__fb"></span>
 			<span class="enter__vk"></span>
@@ -496,9 +496,55 @@
 	</div>
 </div>
 <!-- END .footer -->
-<!-- BEGIN .bg -->
-<div class="bg" style="display: none"></div>
-<div class="bgbtn"></div>
-<!-- END .bg -->
+<!-- BEGIN .popup -->
+<div class="popup-bg"></div>
+<div class="popup popup_enter">
+	<button class="popup__close"></button>
+	<div class="popup__title">Через социальные сети</div>
+	<ul>
+		<li><a class="popup__fb" href="#">Войти через Facebook
+			<span><i></i></span></a></li>
+		<li><a class="popup__vk" href="#">Войти через Вконтакте
+			<span><i></i></span></a></li>
+	</ul>
+</div>
+<div class="popup popup_profile">
+	<button class="popup__close"></button>
+	<div class="popup__title">Профиль</div>
+	<form class="profile">
+		<div class="profile__pic-wrap">
+			<div class="profile__pic-empty">
+				<i></i><em></em>
+				<b>Аватар</b>
+				<input type="file">
+			</div>
+			<div class="profile__pic-load">	
+				<img src="img/pic18.jpg" alt="">
+				<span>Сменить аватар</span>
+			</div>
+			<div class="profile__help">Загрузите Аватар максимум 80 КБ, 100х100 пикселей</div>
+		</div>
+		<input class="profile__field" type="text" value="Ванесса Лапуля">
+		<input class="profile__field" type="text" value="lapochka@mail.ru">
+		<div class="select-out">
+			<div class="select">
+				<i></i>
+				<span>Москва</span>
+				<ul>
+					<li>Киев</li>
+					<li>Париж</li>
+					<li>Маями</li>
+				</ul>
+			</div>
+		</div>
+		<div class="profile__pass">
+			<a href="#">Сменить пароль<i></i></a>
+		</div>
+		<div class="profile__exit">
+			<input type="submit" value="Выйти">
+		</div>
+	</form>
+</div>
+<!-- END .popup -->
 </body>
 </html>

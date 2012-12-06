@@ -7,6 +7,8 @@
 	<link rel="stylesheet" media="screen" href="css/screen.css" >
 	<script src="js/jquery.tools.min.js"></script>
 	<script src="js/jquery-ui-1.9.2.custom.min.js"></script>
+	<script src="js/jquery.mousewheel.js"></script>
+	<script src="js/jquery.jscrollpane.js"></script>	
 	<script src="js/common.js"></script>
 </head>
 <body>
@@ -26,9 +28,9 @@
 			<li><a href="#">Страховка</a></li>
 			<li><a href="#">Техобслуживание</a></li>
 			<li><a href="#">Как выбрать машину</a></li>
-			<li><a href="#">Как покупать машину</a></li>			                
+			<li><a href="#">Как покупать машину</a></li>		                
 		</ul>
-		<a class="enter enter_login-vk" href="#">
+		<a class="enter enter_login-fb" href="#">
 			<span class="enter__us" title="Вдовыдченко Алекса">Вдовыдченко Алекса<i></i></span>
 		</a>
 	</div>
@@ -39,85 +41,165 @@
 			<!-- BEGIN .breadcrumps -->
 			<ul class="breadcrumps">
 				<li><a href="#">Главная</a><span>→</span></li>
-				<li><a href="#">Новости</a><span>→</span></li>
-				<li>Старый, добрый Жук уже не лучше новых двух</li>					    
+				<li><a href="#">Каталог</a><span>→</span></li>
+				<li><a href="#">Mini Cooper</a><span>→</span></li>
+				<li>Paceman</li>
 			</ul>
 			<!-- END .breadcrumps -->
-			<!-- BEGIN .article -->
-			<div class="article">
-				<div class="content">
-					<h1>Старый, добрый Жук уже не лучше новых двух</h1>
-					<span>17.10.2012</span>
-					<img src="img/pic12.jpg" alt="">
-					<p>Российский офис MINI объявил цены на новый трехдверный кроссовер Paceman, премьера которого состоялась сегодня в Париже. Автомобиль будет доступен для заказа в январе 2013 года.В России MINI Paceman будет представлен в трех модификациях: Cooper, Cooper S ALL4, и John Cooper Works. Стартовая цена автомобиля составит 995 тысяч рублей, а версия MINI Cooper S All4 Paceman будет стоить уже 1,35 миллиона рублей. Цена топового MINI John Cooper Works Paceman будет объявлена только в марте 2013 года.</p>
-					<p>Новинка в базовой версии оснащается с 122-сильным 1,6-литровым двигателем с максимальным крутящим моментом 160 Нм при 4250 об/мин. В паре с ним могут работать как механическая, так и автоматическая 6-ступенчатые коробки передач. В первом случае, авто разгоняется до сотни за 10,4 секунды, а во втором — за 11,5 секунды.</p>
+			<!-- BEGIN .car -->
+			<div class="car">
+				<h1>Mini Cooper Paceman</h1>
+				<!-- BEGIN .car__top -->
+				<div class="car__top">
+					<!-- BEGIN .gallery -->					
+					<div class="gallery">						
+						<div class="gallery__slider">
+							<button class="gallery__slider-prev"></button>
+							<button class="gallery__slider-next"></button>
+							<div class="gallery__items">
+								<img src="img/pic16.jpg" alt="">
+								<img src="img/pic16.jpg" alt="">
+								<img src="img/pic16.jpg" alt="">
+								<img src="img/pic16.jpg" alt="">
+								<img src="img/pic16.jpg" alt="">
+								<img src="img/pic16.jpg" alt="">
+								<img src="img/pic16.jpg" alt="">
+								<img src="img/pic16.jpg" alt="">
+								<img src="img/pic16.jpg" alt="">
+								<img src="img/pic16.jpg" alt="">
+							</div>
+						</div>
+						<div class="gallery__thumb">
+							<ul>
+								<li><a href="0"></a><img src="img/pic17.jpg" alt=""></li>
+								<li><a href="1"></a><img src="img/pic17.jpg" alt=""></li>
+								<li><a href="2"></a><img src="img/pic17.jpg" alt=""></li>
+								<li><a href="3"></a><img src="img/pic17.jpg" alt=""></li>
+								<li><a href="4"></a><img src="img/pic17.jpg" alt=""></li>
+								<li><a href="5"></a><img src="img/pic17.jpg" alt=""></li>
+								<li><a href="6"></a><img src="img/pic17.jpg" alt=""></li>
+								<li><a href="7"></a><img src="img/pic17.jpg" alt=""></li>
+								<li><a href="8"></a><img src="img/pic17.jpg" alt=""></li>
+								<li><a href="9"></a><img src="img/pic17.jpg" alt=""></li>
+							</ul>
+						</div>
+					</div>
+					<!-- END .gallery -->
+					<!-- BEGIN .car__detail -->
+					<div class="car__detail">
+						<div class="car__price">Цена от <span>995 000</span> руб.</div>	
+						<div class="car__want">
+							<a href="#">ХОЧУ ТАКУЮ</a>
+						</div>
+						<ul class="car__rate">
+							<li>Крутость
+								<i class="car__rate-min"></i>
+								<i class="car__rate-max" style="width: 70px"></i>
+							</li>
+							<li>Экономичность
+								<i class="car__rate-min"></i>
+								<i class="car__rate-max" style="width: 35px"></i>
+							</li>
+							<li>Стильность
+								<i class="car__rate-min"></i>
+								<i class="car__rate-max" style="width: 105px"></i>
+							</li>
+						</ul>
+						<div class="car__cat">
+							<b>Категории</b>
+							<ul>
+								<li><a href="#">Для дачи</a></li>	
+								<li><a href="#">Для семьи</a></li>	
+								<li><a href="#">Люкс</a></li>	
+								<li><a href="#">Для шоппинга</a></li>	
+								<li><a href="#">Для быстрой езды</a></li>
+							</ul>							
+						</div>
+						<div class="car__have">
+							<a href="#">У меня такая!</a>
+						</div>
+					</div>
+					<!-- END .car__detail -->
+				</div>
+				<!-- END .car__top -->
+				<!-- BEGIN .car__param -->
+				<div class="car__param">
 					<table>
 						<tr>
-							<th>Employee</th>
-							<th>Bonus</th>
-							<th>Salary</th>
-							<th>Supervisor</th>
+							<td><b>Цена</b>995 000 руб.</td>
+							<td><b>Мощность</b>122 л.с.</td>
 						</tr>
 						<tr>
-							<td>Stephen C. Cox</td>
-							<td>$300</td>
-							<td>$300</td>
-							<td>$300</td>
+							<td><b>Топливо</b>бензин</td>
+							<td><b>Расход топлива</b>6 л./ 100 км</td>
 						</tr>
 						<tr>
-							<td>Stephen C. Cox</td>
-							<td>$300</td>
-							<td>$300</td>
-							<td>$300</td>
+							<td><b>Коробка передач</b>Автомат</td>
+							<td><b>Количество дверей</b>3</td>
 						</tr>
 						<tr>
-							<td>Stephen C. Cox</td>
-							<td>$300</td>
-							<td>$300</td>
-							<td>$300</td>
-						</tr>
-						<tr>
-							<td>Stephen C. Cox</td>
-							<td>$300</td>
-							<td>$300</td>
-							<td>$300</td>
+							<td><b>Привод</b>Передний</td>
+							<td><b>Количество мест</b>4</td>
 						</tr>
 					</table>
-					<blockquote>
-						<p>Договорились, что Игорь приедет на полигон в пятницу до обеда, но в тот день дачники отправились на свои участки раньше обычного. В итоге поездка заняла пять часов, причем паспорт Игорю пришлось оставить на заправке в залог: терминал по приему банковских карт отказал, а наличных для оплаты полного бака бензина у него, как назло, не оказалось. Но ни пятичасовая толкотня в пробках, ни история с паспортом нашего добровольца ничуть не смутили — стоит, улыбается еще шире, чем его Mini.</p>
-						<i>Заместитель генерального представителя по иностранным комменикациям BMW в России</i>
-						<b>Стивен Балмер</b>
-					</blockquote>
-					<div class="slider-wrap">
-						<div class="slider-navi">
-							<a class="active" href=""></a>
-							<a href=""></a>
-							<a href=""></a>
-							<a href=""></a>
-							<a href=""></a>
-						</div>
-						<div class="slider-nav">
-							<button class="slider-prev"></button>
-							<button class="slider-next"></button>
-						</div>
-						<div class="slider">
-							<div class="slider__items">
-								<img src="img/pic13.jpg" alt="">
-								<img src="img/pic13.jpg" alt="">
-								<img src="img/pic13.jpg" alt="">
-								<img src="img/pic13.jpg" alt="">
-								<img src="img/pic13.jpg" alt="">
-							</div>							
-						</div>
-						<div class="slider-title">Mini Cooper</div>									
-					</div>
+				</div>
+				<!-- END .car__param -->
+				<!-- BEGIN .car__complect -->
+				<div class="car__complect">
+					<h1 class="h1">Комплектации</h1>
+					<h3 class="h3"><a href="#">Fiat 500 Pop 1.2 8v 69cv</a></h3>
+					<table>
+						<tr>
+							<th>Мощность</th>
+							<th>Тип топлива</th>
+							<th>Коробка передач</th>
+							<th>Цена</th>	
+						</tr>
+						<tr>
+							<td>69 л.с.</td>
+							<td>Бензин</td>
+							<td>механика</td>
+							<td>455 780 руб.</td>
+						</tr>
+					</table>
+					<h3 class="h3"><a href="#">Fiat 500 Pop 1.2 8v 69cv</a></h3>
+					<table>
+						<tr>
+							<th>Мощность</th>
+							<th>Тип топлива</th>
+							<th>Коробка передач</th>
+							<th>Цена</th>	
+						</tr>
+						<tr>
+							<td>69 л.с.</td>
+							<td>Бензин</td>
+							<td>механика</td>
+							<td>455 780 руб.</td>
+						</tr>
+					</table>
+					<h3 class="h3"><a href="#">Fiat 500 Pop 1.2 8v 69cv</a></h3>
+					<table>
+						<tr>
+							<th>Мощность</th>
+							<th>Тип топлива</th>
+							<th>Коробка передач</th>
+							<th>Цена</th>	
+						</tr>
+						<tr>
+							<td>69 л.с.</td>
+							<td>Бензин</td>
+							<td>механика</td>
+							<td>455 780 руб.</td>
+						</tr>
+					</table>
 					<div class="text">
 						<p>Интересно, что на динамометрической дороге полигона обе машины разгоняются примерно одинаково — сначала Juke слегка отстает, к сотне чуть опережает Suzuki, затем снова пропускает вперед. Но эластичность у Джука лучше — помогают вариатор и более отзывчивый на низких оборотах 117-сильный мотор.<br>Его могло и не быть в этой компании — в фирменном пресс-парке есть только полноприводные и мощные турбома-шины. А нам-то нужен 122-сильный переднеприводник! Бросили клич в интернет-сообществе Mini People — и... В последний момент откликнулся Игорь, владелец небесно-голубого Кантримена 1.6 с механической коробкой передач. Тем лучше, решили мы, ведь за шести-ступенчатый.</p>
-					</div>									
+					</div>
 					<div class="social-btns">
 						<img src="img/pic14.jpg" alt="">
-					</div>
+					</div>					
 				</div>
+				<!-- END .car__complect -->				
 				<!-- BEGIN .add-comm -->
 				<div class="add-comm">
 					<textarea placeholder="А что ты думаешь об этой машинке?"></textarea>
@@ -163,7 +245,7 @@
 				</ul>
 				<!-- END .article-news -->
 			</div>
-			<!-- END .article -->
+			<!-- END .car -->
 		</div>
 		<div class="l-col4">
 			<!-- BEGIN .filter -->

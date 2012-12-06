@@ -1,6 +1,9 @@
 .lteie8{
-	.title {
+	.title, .catalog_main li, .catalog__cars li {
 		display: inline;
 		zoom: 1;
+	}
+	.profile__field {
+		line-height: 23px;
 	}
 }

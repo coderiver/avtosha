@@ -197,7 +197,7 @@
 		cursor: pointer;
 	}
 }
-.top__slider-prev {
+.top__slider-prev, .gallery__slider-prev {
 	left: 10px;
 	@include sized-sprite($icons, slider-l);
 	&:hover {
@@ -207,7 +207,7 @@
 		@include sized-sprite($icons, slider-l-a);
 	}
 }
-.top__slider-next {
+.top__slider-next, .gallery__slider-next {
 	right: 10px;
 	@include sized-sprite($icons, slider-r);
 	&:hover {
@@ -379,6 +379,7 @@
 	label {
 		display: block;
 		padding: 0 8px;
+		height: 21px;
 		line-height: 21px;
 		border: 2px solid #d8d8d8;
 		font-size: 12px;
@@ -676,5 +677,393 @@
 	img {
 		float: left;
 		margin: 0;
+		width: 710px;
+		height: 460px;
+	}
+}
+//social-btns
+.social-btns {
+	margin: 30px 0;
+	img {
+		float: none;
+		margin: 0;
+	}
+}
+//gossip
+.gossip, .comms {
+	margin-bottom: 65px;
+	.title {
+		margin-bottom: 22px;
+	}
+	p {
+		line-height: 1.5;
+	}
+	li {
+		margin-bottom: 30px;
+	}
+}
+.gossip__person, .comms__person {
+	margin-bottom: 10px;
+	img {
+		float: left;
+		padding-top: 3px;
+		margin-right: 8px;
+	}
+	span {
+		display: block;
+		font-size: 12px;
+		color: #7f7f7f;
+	}	
+}
+.comms {
+	width: 595px;
+	margin: 0 0 80px 10px;
+}
+//add-comm
+.add-comm {
+	width: 485px;
+	padding: 10px;
+	margin: 0 0 28px 10px;
+	background: $green;
+	textarea {
+		width: 465px;
+		height: 85px;
+		margin-bottom: 10px;
+		padding: 10px;
+		font: 14px Arial, sans-serif;
+		color: $dark;
+		&::-webkit-input-placeholder {
+			color: $dark;
+		}
+		&:-moz-placeholder {
+			color: $dark;
+		}
+	}	
+}
+.add-comm__param {
+	overflow: hidden;
+	input {
+		float: left;
+		width: 180px;
+		height: 25px;
+		margin-right: 22px;
+		background: $pink;
+		border: 2px solid $pink;
+		font: 14px/21px 'plumbregular', Arial, sans-serif;
+		color: #fff;
+		cursor: pointer;
+		&:hover {
+			border: 2px solid #d6d8d1;
+			background: $green;
+		}
+	}
+	a {
+		float: left;
+		line-height: 25px;
+		text-decoration: underline;
+		color: #fff;
+		&:hover {
+			text-decoration: none;
+			color: $blue;
+		}
+	}
+	span {
+		position: relative;
+		float: right;
+		height: 25px;
+		padding-right: 27px;
+		line-height: 25px;
+		color: #fff;
+		i {
+			position: absolute;
+			top: 7px;
+			right: 8px;
+			@include sized-sprite($icons, user);
+		}
+	}
+}
+//car
+.car {
+	h1 {
+		margin: 16px 0 16px 10px;
+		font: 24px 'plumbbold', Arial, sans-serif;
+		color: #323232;
+	}
+}
+.car__top {
+	padding-left: 10px;
+	overflow: hidden;
+}
+//gallery 
+.gallery {
+	float: left;
+	width: 382px;
+}
+.gallery__slider {
+	position: relative;
+	width: 382px;
+	height: 289px;
+	margin-bottom: 7px;
+	overflow: hidden;
+	button {
+		position: absolute;
+		top: 132px;
+		z-index: 10;
+		cursor: pointer;
+	}
+}
+.gallery__items {
+	position: absolute;
+	width: 2000em;
+	img {
+		float: left;
+		width: 382px;
+		height: 289px;
+	}
+}
+.gallery__thumb {
+	width: 382px;
+	height: 91px !important;
+	padding-bottom: 22px;
+	overflow: auto;
+	outline: none;
+	ul {
+		margin-right: -10px;
+		overflow: hidden;
+	}
+	li {
+		position: relative;
+		float: left;
+		margin-left: 6px;
+		&:first-child {
+			margin: 0;
+		}
+	}
+	a {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 87px;
+		height: 65px;
+		border: 2px solid rgba(0,0,0,0);
+		&:hover {
+			border-color: $green;
+		}
+		&:active {
+			border-color: $pink;
+		}
+	}
+	img {
+		display: block;
+	}
+}
+//scroll
+.jspContainer
+	{
+		overflow: hidden;
+		position: relative;		
+	}
+.jspPane
+	{
+		position: absolute;		
+	}
+.jspHorizontalBar
+	{
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		height: 14px;
+		background: red;
+	}
+.jspDragLeft {
+	position: absolute;
+	top: 5px;
+	left: 50%;
+	margin-left: -4px;
+	@include sized-sprite($icons, track);
+}
+.jspCap
+	{
+		display: none;
+	}
+.jspHorizontalBar .jspCap
+	{
+		float: left;
+	}
+.jspTrack
+	{
+		background: #d8d8d8;
+		position: relative;
+	}
+.jspDrag
+	{
+		background: $pink;
+		position: relative;
+		top: 0;
+		left: 0;
+		cursor: pointer;
+	}
+.jspHorizontalBar .jspTrack,
+.jspHorizontalBar .jspDrag
+	{
+		float: left;
+		height: 100%;
+	}
+.jspArrow
+	{
+		background: #50506d;
+		text-indent: -20000px;
+		display: block;
+		cursor: pointer;
+	}
+.jspArrow.jspDisabled
+	{
+		cursor: default;
+		background: #80808d;
+	}
+.jspVerticalBar .jspArrow
+	{
+		height: 16px;
+	}
+.jspHorizontalBar .jspArrow
+	{
+		width: 16px;
+		float: left;
+		height: 100%;
+	}
+.jspVerticalBar .jspArrow:focus
+	{
+		outline: none;
+	}
+.jspCorner
+	{
+		background: #eeeef4;
+		float: left;
+		height: 100%;
+	}
+/* Yuk! CSS Hack for IE6 3 pixel bug :( */
+* html .jspCorner
+{
+	margin: 0 -3px 0 0;
+}
+//car__detail
+.car__detail {
+	float: right;
+	width: 317px;
+}
+.car__price {
+	margin: 5px 0 27px 0;
+	font: 24px 'plumbbold', Arial, sans-serif;
+	color: #323232;
+	span {
+		color: $pink;
+	}
+}
+.car__want {
+	margin-bottom: 25px;
+	a {
+		display: inline-block;
+		width: 213px;
+		height: 42px;
+		background: $pink;
+		font: 18px/42px 'plumbbold', Arial, sans-serif;
+		color: #fff;
+		text-align: center;
+	}
+}
+.car__rate {
+	li {
+		position: relative;
+		margin-bottom: 28px;
+		font-weight: bold;
+	}
+	i {
+		position: absolute;
+		left: 140px;
+		bottom: 3px;
+	}
+}
+.car__rate-min {
+	@include sized-sprite($icons, range-b);
+}
+.car__rate-max {
+	@include sized-sprite($icons, range-b-a);
+	z-index: 10;
+}
+.car__cat {
+	margin-top: 33px;
+	ul {
+		margin: 15px 0 22px 0;
+		overflow: hidden;
+	}
+	li {
+		float: left;
+		margin: 0 30px 5px 0;
+	}
+	a {
+		@extend .link;
+	}
+}
+.car__have {
+	a {
+		display: inline-block;
+		width: 148px;
+		height: 29px;
+		background: $green;
+		font: 18px/29px 'plumbbold', Arial, sans-serif;
+		color: #fff;
+		text-align: center;
+	}
+}
+.car__param {
+	table {
+		width: 100%;
+	}
+	tr {
+		&:nth-child(even) {
+			background: #e1f9ff;
+		}
+	}
+	td {
+		padding: 17px 0 12px 17px;
+		&:first-child {
+			width: 388px;
+		}
+	}
+	b {
+		display: block;
+		margin-bottom: 6px;
+	}
+}
+.car__complect {
+	padding-left: 10px;
+	margin: 30px 0 0 0;
+	.h3 {
+		margin-bottom: 19px;
+		font-size: 20px;
+	}
+	a {
+		font-weight: normal;
+		@extend .link;
+	}
+	table {
+		width: 720px;
+		margin: 0 0 35px 5px;
+	}
+	td {
+		&:first-child {
+			width: 200px;
+		}
+	}
+	th {
+		padding-bottom: 5px;
+		text-align: left;
+	}
+}
+.text {
+	p {
+		margin-bottom: 15px;
+		line-height: 1.6;
 	}
 }
