@@ -555,6 +555,7 @@ button { cursor: pointer; }
 .catalog__list a { color: #00b9e9; font-size: 18px; border-bottom: 1px dashed #00b9e9; }
 .catalog__list a:hover { color: #addd2c; border: none; }
 .catalog__list a:active { color: #ff358b; }
+.catalog__list a.active { color: #addd2c; border: none; }
 
 .catalog__cars { display: none; margin: 0 -50px 5px 0; font-size: 0; }
 .catalog__cars li { display: inline-block; width: 154px; height: 233px; margin: 0 41px 0 0; vertical-align: top; font-size: 14px; }
@@ -627,6 +628,9 @@ button { cursor: pointer; }
 
 .range__full { background: url('../img/icons-sc94fbcbe10.png') 0 -1056px no-repeat; width: 148px; height: 12px; width: 0; z-index: 10; }
 
+.range__click { width: 148px; height: 12px; z-index: 20; }
+.range__click i { float: left; width: 20%; height: 12px; font: 0/0 a; text-shadow: none; color: transparent; cursor: pointer; }
+
 .range__out { position: absolute; top: 0; left: -3px; width: 148px; height: 12px; }
 
 .ui-slider-handle { position: absolute; bottom: -12px; left: -3px; background: url('../img/icons-sc94fbcbe10.png') 0 -1160px no-repeat; width: 7px; height: 10px; outline: none; }
@@ -697,6 +701,7 @@ button { cursor: pointer; }
 .filter_mod .range, .filter_mod .range__out, .filter_aside .range, .filter_aside .range__out { width: 128px; }
 .filter_mod .range__full, .filter_aside .range__full { background: url('../img/icons-sc94fbcbe10.png') 0 -956px no-repeat; width: 128px; height: 12px; width: 0; }
 .filter_mod .range__empty, .filter_aside .range__empty { background: url('../img/icons-sc94fbcbe10.png') 0 -978px no-repeat; width: 128px; height: 12px; }
+.filter_mod .range__click, .filter_aside .range__click { width: 128px; }
 
 .content { padding: 15px 0 0 10px; }
 .content h1 { font: 24px 'plumbbold', Arial, sans-serif; color: #323232; }

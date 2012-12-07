@@ -50,10 +50,38 @@ if ($('.range__slider').length>0) {
 	  });
 	});
 };
+$('.range__click i').click(function() {
+	var rng_txt = $(this).text();
+	$(this).parent().prev().prev().prev().val(rng_txt);
+	$(this).parent().prev().prev().prev().prev().children().slider('value', rng_txt);
+	rng_txt = parseFloat(rng_txt);
+	switch (rng_txt) {
+ 		case 0:
+      $(this).parent().prev().prev().css('width', '0');
+      break
+    case 1:
+      $(this).parent().prev().prev().css('width', '20%');
+      break
+    case 2:
+      $(this).parent().prev().prev().css('width', '40%');
+      break
+    case 3:
+      $(this).parent().prev().prev().css('width', '60%');
+      break
+    case 4:
+      $(this).parent().prev().prev().css('width', '80%');
+      break
+    case 5:
+      $(this).parent().prev().prev().css('width', '100%');
+      break
+	};
+});
 
 //catalog
 $('.catalog__list a').click(function() {
 	$('.catalog__cars').hide();
+	$('.catalog__list a').removeClass('active');
+	$(this).addClass('active');
 	var cc_val = $(this).attr('href');
 	$('.'+cc_val).show();
 	return false;

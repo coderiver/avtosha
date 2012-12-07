@@ -65,6 +65,10 @@
 		&:active {
 			color: $pink;
 		}
+		&.active {
+			color: $green;
+			border: none;
+		}
 	}
 }
 .catalog__cars {
@@ -315,6 +319,18 @@
 	width: 0;
 	z-index: 10;
 }
+.range__click {
+	width: 148px;
+	height: 12px;
+	z-index: 20;
+	i {
+		float: left;
+		width: 20%;
+		height: 12px;
+		@include hide-text;
+		cursor: pointer;
+	}
+}
 .range__out {
 	position: absolute;
 	top: 0;
@@ -545,6 +561,9 @@
 	}
 	.range__empty {
 		@include sized-sprite($icons, range-s);
+	}
+	.range__click {
+		width: 128px;
 	}
 }
 //content {
