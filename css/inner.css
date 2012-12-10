@@ -277,8 +277,12 @@
 .slider__items { position: absolute; width: 2000em; }
 .slider__items img { float: left; margin: 0; width: 710px; height: 460px; }
 
-.social-btns { margin: 30px 0; }
-.social-btns img { float: none; margin: 0; }
+.likes { margin: 30px 0; overflow: hidden; }
+.likes .fb-like { float: left; margin-right: 15px; }
+.likes .fb-like span { margin: 0; }
+.likes iframe { float: left; margin-right: 5px; }
+.likes #vk_like { float: left; clear: none !important; }
+.likes .g-plusone { float: left !important; }
 
 .gossip, .comms { margin-bottom: 65px; }
 .gossip .title, .comms .title { margin-bottom: 22px; }
@@ -292,7 +296,7 @@
 .comms { width: 595px; margin: 0 0 80px 10px; }
 
 .add-comm { width: 485px; padding: 10px; margin: 0 0 28px 10px; background: #addd2c; }
-.add-comm textarea { width: 465px; height: 85px; margin-bottom: 10px; padding: 10px; font: 14px Arial, sans-serif; color: #323232; }
+.add-comm textarea { width: 465px; height: 85px; margin-bottom: 10px; padding: 10px; font: 14px Arial, sans-serif; color: #323232; resize: none; }
 .add-comm textarea::-webkit-input-placeholder { color: #323232; }
 .add-comm textarea:-moz-placeholder { color: #323232; }
 

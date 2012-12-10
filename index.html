@@ -10,6 +10,16 @@
 	<script src="js/common.js"></script>
 </head>
 <body>
+<!-- BEGIN Facebook group -->
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/uk_UA/all.js#xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<!-- END Facebook group -->
 <!-- BEGIN  wrap-->
 <div class="wrap">
 	<!-- BEGIN .header -->
@@ -505,7 +515,7 @@
 			</ul>
 		</div>
 		<div class="facebook">
-			<img src="img/pic7.jpg" alt="">
+			<div class="fb-like-box" data-href="http://www.facebook.com/platform" data-width="250" data-height="160" data-show-faces="false" data-stream="false" data-header="true"></div>
 		</div>
 	</div>
 </div>

@@ -8,8 +8,19 @@
 	<script src="js/jquery.tools.min.js"></script>
 	<script src="js/jquery-ui-1.9.2.custom.min.js"></script>
 	<script src="js/common.js"></script>
+	<!--<script src="//vk.com/js/api/openapi.js?71"></script>-->
 </head>
 <body>
+<!-- BEGIN Facebook group -->
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/uk_UA/all.js#xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<!-- END Facebook group -->
 <!-- BEGIN  wrap-->
 <div class="wrap">
 	<!-- BEGIN .header -->
@@ -114,8 +125,11 @@
 					<div class="text">
 						<p>Интересно, что на динамометрической дороге полигона обе машины разгоняются примерно одинаково — сначала Juke слегка отстает, к сотне чуть опережает Suzuki, затем снова пропускает вперед. Но эластичность у Джука лучше — помогают вариатор и более отзывчивый на низких оборотах 117-сильный мотор.<br>Его могло и не быть в этой компании — в фирменном пресс-парке есть только полноприводные и мощные турбома-шины. А нам-то нужен 122-сильный переднеприводник! Бросили клич в интернет-сообществе Mini People — и... В последний момент откликнулся Игорь, владелец небесно-голубого Кантримена 1.6 с механической коробкой передач. Тем лучше, решили мы, ведь за шести-ступенчатый.</p>
 					</div>									
-					<div class="social-btns">
-						<img src="img/pic14.jpg" alt="">
+					<div class="likes">
+						<div id="vk_like"></div>						
+						<a href="https://twitter.com/share" class="twitter-share-button" data-url="https://dev.twitter.com" data-via="your_screen_name" data-lang="en">Tweet</a>
+						<div class="g-plusone" data-size="medium"></div>
+						<div class="fb-like" data-send="false" data-layout="button_count" data-width="450" data-show-faces="false"></div>
 					</div>
 				</div>
 				<!-- BEGIN .add-comm -->
@@ -325,7 +339,7 @@
 			</ul>
 		</div>
 		<div class="facebook">
-			<img src="img/pic7.jpg" alt="">
+			<div class="fb-like-box" data-href="http://www.facebook.com/platform" data-width="250" data-height="160" data-show-faces="false" data-stream="false" data-header="true"></div>
 		</div>
 	</div>
 </div>
@@ -380,5 +394,32 @@
 	</form>
 </div>
 <!-- END .popup -->
+<!-- Facebook -->
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<!-- Twitter -->
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script> 
+<!-- Vkontakte --> 
+<script type="text/javascript">
+  VK.init({apiId: 3287306, onlyWidgets: true});
+</script>
+<script type="text/javascript">
+	VK.Widgets.Like("vk_like", {type: "mini", height: 20});
+</script>
+<!-- google +1 -->
+<script type="text/javascript">
+  window.___gcfg = {lang: 'ru'};
+  (function() {
+    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+    po.src = 'https://apis.google.com/js/plusone.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+  })();
+</script>
 </body>
 </html>

@@ -701,11 +701,26 @@
 	}
 }
 //social-btns
-.social-btns {
+.likes {
 	margin: 30px 0;
-	img {
-		float: none;
-		margin: 0;
+	overflow: hidden;
+	.fb-like {
+		float: left;
+		margin-right: 15px;
+		span {
+			margin: 0;
+		}
+	}
+	iframe {
+		float: left;
+		margin-right: 5px;
+	}
+	#vk_like {
+		float: left;
+		clear: none !important;
+	}
+	.g-plusone {
+		float: left !important;
 	}
 }
 //gossip
@@ -746,11 +761,12 @@
 	background: $green;
 	textarea {
 		width: 465px;
-		height: 85px;
+		height: 85px;		
 		margin-bottom: 10px;
 		padding: 10px;
 		font: 14px Arial, sans-serif;
 		color: $dark;
+		resize: none;
 		&::-webkit-input-placeholder {
 			color: $dark;
 		}
